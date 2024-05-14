@@ -2036,10 +2036,6 @@ html {
   height: 820px;
 }
 
-.h-\[84px\] {
-  height: 84px;
-}
-
 .h-\[94px\] {
   height: 94px;
 }
@@ -2106,10 +2102,6 @@ html {
 
 .w-\[80\%\] {
   width: 80%;
-}
-
-.w-\[84px\] {
-  width: 84px;
 }
 
 .w-\[90px\] {
@@ -2698,10 +2690,6 @@ html {
   padding-top: 3.5rem;
 }
 
-.pt-4 {
-  padding-top: 1rem;
-}
-
 .pt-6 {
   padding-top: 1.5rem;
 }
@@ -3137,48 +3125,7 @@ h6 {
 
 /* Tabs */
 
-@media only screen and (max-width: 1600px) and (min-width: 1024px) {
-  .tailwind-dropdown li:hover > ul {
-    transform: translatex(-100%) scale(1);
-    transform: translatex(100%) scale(1);
-  }
-
-  .tailwind-dropdown li:hover > .nav-level-content-4 {
-    transform: translatex(-110%) scale(1);
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .tailwind-dropdown li > ul {
-    transform: translatex(100%) scale(0);
-  }
-
-  .tailwind-dropdown li:hover > ul {
-    transform: translatex(101%) scale(1);
-  }
-
-  .tailwind-dropdown li > button svg {
-    transform: rotate(-90deg);
-  }
-
-  .tailwind-dropdown li:hover > button svg {
-    transform: rotate(-270deg);
-  }
-
-  .tailwind-dropdown .group:hover .group-hover\:scale-100 {
-    transform: scale(1);
-  }
-
-  .tailwind-dropdown .group:hover .group-hover\:-rotate-180 {
-    transform: rotate(180deg);
-  }
-
-  .tailwind-dropdown .scale-0 {
-    transform: scale(0);
-  }
-}
-
-/* Toggle Button */
+/* Toggle Button Start */
 
 .open-sidebar-btn {
   background: transparent;
@@ -3232,7 +3179,9 @@ h6 {
   transform: translateY(-6px) rotate(135deg);
 }
 
-/* navbar Active */
+/* Toggle Button End */
+
+/* Navbar Active */
 
 .nav-link.active span {
   display: block;
@@ -3251,6 +3200,36 @@ h6 {
 
   .testimonial-area .slick-dots {
     bottom: 14px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .tailwind-dropdown li > ul {
+    transform: translatex(100%) scale(0);
+  }
+
+  .tailwind-dropdown li:hover > ul {
+    transform: translatex(101%) scale(1);
+  }
+
+  .tailwind-dropdown li > button svg {
+    transform: rotate(-90deg);
+  }
+
+  .tailwind-dropdown li:hover > button svg {
+    transform: rotate(-270deg);
+  }
+
+  .tailwind-dropdown .group:hover .group-hover\:scale-100 {
+    transform: scale(1);
+  }
+
+  .tailwind-dropdown .group:hover .group-hover\:-rotate-180 {
+    transform: rotate(180deg);
+  }
+
+  .tailwind-dropdown .scale-0 {
+    transform: scale(0);
   }
 }
 
@@ -3294,7 +3273,7 @@ h6 {
   }
 
   .section-inner-main,
-  .section-inner-blue {
+    .section-inner-blue {
     padding: 70px 0;
   }
 
@@ -3581,10 +3560,6 @@ h6 {
     grid-column: span 6 / span 6;
   }
 
-  .md\:col-span-8 {
-    grid-column: span 8 / span 8;
-  }
-
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -3739,10 +3714,6 @@ h6 {
   .md\:py-\[26px\] {
     padding-top: 26px;
     padding-bottom: 26px;
-  }
-
-  .md\:pb-\[140px\] {
-    padding-bottom: 140px;
   }
 
   .md\:pr-16 {
@@ -3907,21 +3878,16 @@ h6 {
     line-height: 2.25rem;
   }
 
+  .lg\:text-\[20px\] {
+    font-size: 20px;
+  }
+
   .lg\:text-\[38px\] {
     font-size: 38px;
   }
 
   .lg\:text-\[64px\] {
     font-size: 64px;
-  }
-
-  .lg\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
-  .lg\:text-\[20px\] {
-    font-size: 20px;
   }
 
   .lg\:leading-\[75px\] {
