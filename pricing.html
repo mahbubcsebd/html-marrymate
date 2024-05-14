@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll:smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarryMate | Pricing</title>
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <!-- Jost Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Sail Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <header class="bg-main-300 py-4 lg:py-0">
+        <div class="container">
+            <div class="lg:flex items-center justify-between">
+                <div class="flex justify-between w-full lg:w-auto">
+                    <div>
+                        <a href="index.html"><img src="assets/icons/logo.svg" alt="logo"></a>
+                    </div>
+                    <div class="flex items-center gap-5">
+                        <div class="flex lg:hidden items-center justify-end space-x-5">
+                            <a href="cart.html" class="relative">
+                                <img src="assets/icons/cart.svg" alt="cart icon">
+                                <span
+                                    class="w-[10px] h-[10px] rounded-full bg-[#DC2B2B] text-[8px] text-white flex justify-center items-center absolute top-1 right-0">
+                                    2</span>
+                            </a>
+                        </div>
+                        <button id="navbar-toggler" class="navbar-toggler lg:hidden open-sidebar-btn"
+                            type="button"><span></span><span></span><span></span></button>
+                    </div>
+                </div>
+                <div class="lg:flex flex-col lg:flex-row lg:items-center hidden lg:w-7/12 lg:justify-between"
+                    id="navbarContent">
+                    <nav class="header-nav">
+                        <ul class="flex flex-col lg:flex-row lg:items-center lg:gap-4 navbar-items">
+                            <li class="nav-item">
+                                <div class="block group tailwind-dropdown relative">
+                                    <button
+                                        class="flex items-center w-full justify-between nav-sub-menu-btn lg:py-7 nav-link relative border-b lg:border-b-0 border-gray-200">
+                                        <span
+                                            class="relative text-[#3E4767] text-base font-jost font-normal nav-link block py-3 lg:py-0 ">Home</span>
+                                        <span>
+                                            <svg class="w-4 h-4 transition duration-150 ease-in-out transform fill-current group-hover:-rotate-180"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                <path
+                                                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                            </svg>
+                                        </span>
+                                        <span class="absolute left-0 w-full bottom-[15px] fancy-border">
+                                            <img src="assets/icons/fancy-border.svg" alt="fancy border">
+                                        </span>
+                                    </button>
+                                    <ul id="nav-level-content-1"
+                                        class="hidden transition duration-150 ease-in-out origin-top transform scale-0 bg-white nav-level-content-2 lg:block lg:absolute group-hover:scale-100 min-w-44 z-50 border-t-4 border-blue-900">
+                                        <li>
+                                            <a href="index.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Home
+                                                One</a>
+                                        </li>
+                                        <li>
+                                            <a href="index-2.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Home
+                                                Two</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="services.html"
+                                    class="relative text-[#3E4767] text-base font-jost font-normal nav-link block py-3 lg:py-0 border-b lg:border-b-0 border-gray-200">Our
+                                    Services
+                                    <span class="absolute left-0 w-full -bottom-3 fancy-border">
+                                        <img src="assets/icons/fancy-border.svg" alt="fancy border">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="portfolio.html"
+                                    class="relative text-[#3E4767] text-base font-jost font-normal nav-link block py-3 lg:py-0 border-b lg:border-b-0 border-gray-200">Portfolio
+                                    <span class="absolute left-0 w-full -bottom-3 fancy-border">
+                                        <img src="assets/icons/fancy-border.svg" alt="fancy border">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="product.html"
+                                    class="relative text-[#3E4767] text-base font-jost font-normal nav-link block py-3 lg:py-0 border-b lg:border-b-0 border-gray-200">Accessories
+                                    <span class="absolute left-0 w-full -bottom-3 fancy-border">
+                                        <img src="assets/icons/fancy-border.svg" alt="fancy border">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="block group tailwind-dropdown relative">
+                                    <button
+                                        class="flex items-center w-full justify-between nav-sub-menu-btn lg:py-7 nav-link relative">
+                                        <span
+                                            class="relative text-[#3E4767] text-base font-jost font-normal nav-link block py-3 lg:py-0 ">Pages</span>
+                                        <span>
+                                            <svg class="w-4 h-4 transition duration-150 ease-in-out transform fill-current group-hover:-rotate-180"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                <path
+                                                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                            </svg>
+                                        </span>
+                                        <span class="absolute left-0 w-full bottom-[15px] fancy-border">
+                                            <img src="assets/icons/fancy-border.svg" alt="fancy border">
+                                        </span>
+                                    </button>
+                                    <ul id="nav-level-content-2"
+                                        class="hidden transition duration-150 ease-in-out origin-top transform scale-0 bg-white nav-level-content-2 lg:block lg:absolute group-hover:scale-100 min-w-44 z-50 border-t-4 border-blue-900">
+                                        <li>
+                                            <a href="blogs.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="pricing.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Pricing</a>
+                                        </li>
+                                        <li>
+                                            <a href="teams.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Teams</a>
+                                        </li>
+                                        <li>
+                                            <a href="testimonials.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Testimonials</a>
+                                        </li>
+                                        <li>
+                                            <a href="book-appoinment.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Book
+                                                Appoinment</a>
+                                        </li>
+                                        <li class="relative px-3 py-1 rounded-sm hover:bg-gray-100">
+                                            <button
+                                                class="flex items-center w-full text-left outline-none focus:outline-none nav-sub-menu-btn">
+                                                <span class="flex-1 pr-1">Sub Menu</span>
+                                                <span class="mr-auto">
+                                                    <svg class="w-4 h-4 transition duration-150 ease-in-out fill-current"
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                        <path
+                                                            d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                            <ul id="nav-level-content-3"
+                                                class="top-0 le right-0 hidden transition duration-150 ease-in-out origin-top-left bg-white md:block lg:absolute min-w-44 z-50 border-t-4 border-blue-900 nav-level-content-3">
+                                                <li>
+                                                    <a href="#"
+                                                        class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Demo
+                                                        Sub
+                                                        Menu</a>
+                                                </li>
+                                                <li class="relative px-3 py-1 rounded-sm hover:bg-gray-100">
+                                                    <button
+                                                        class="flex items-center w-full text-left outline-none focus:outline-none nav-sub-menu-btn">
+                                                        <span class="flex-1 pr-1">Sub Menu</span>
+                                                        <span class="mr-auto">
+                                                            <svg class="w-4 h-4 transition duration-150 ease-in-out fill-current"
+                                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                                <path
+                                                                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                    <ul id="nav-level-content-4"
+                                                        class="top-0 right-0 hidden transition duration-150 ease-in-out origin-top-left bg-white md:block lg:absolute min-w-40 z-50 border-t-4 border-blue-900 nav-level-content-4">
+                                                        <li>
+                                                            <a href="#"
+                                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Demo
+                                                                Sub
+                                                                Menu</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"
+                                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Demo
+                                                                Sub
+                                                                Menu</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Demo
+                                                        Sub
+                                                        Menu</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Demo
+                                                        Sub
+                                                        Menu</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="signin.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Sign
+                                                In</a>
+                                        </li>
+                                        <li>
+                                            <a href="signup.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Sign
+                                                Up</a>
+                                        </li>
+                                        <li>
+                                            <a href="404.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Not
+                                                Found</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="hidden lg:flex items-center justify-end gap-5">
+                        <div class="relative flex items-center">
+                            <div class="hidden absolute top-1/2 -translate-y-1/2 right-10 header-search-input">
+                                <input type="text" name="search" id="search"
+                                    class="block min-w-80 bg-transparent px-5 py-3 rounded-md border-1 border-main-600 text-gray-600 ring-1 ring-inset ring-main-600 focus:ring-1  placeholder:text-gray-600 focus:ring-main-900 placeholder:text-base outline-none"
+                                    placeholder="Search here...">
+                            </div>
+                            <button class="header-search-btn text-[20px] text-main-900 pt-1"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                        <a href="cart.html" class="relative">
+                            <img src="assets/icons/cart.svg" alt="cart icon">
+                            <span
+                                class="w-[10px] h-[10px] rounded-full bg-[#DC2B2B] text-[8px] text-white flex justify-center items-center absolute top-1 right-0">
+                                2</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+
+
+    <!-- Page Banner Section Start -->
+    <div id="page-banner" class="page-banner">
+        <div class="relative page-banner-area bg-main-800">
+            <div class="hidden md:block">
+                <img src="assets/icons/banner-1.svg" alt="banner icon" class="absolute bottom-0 z-10 left-4">
+                <img src="assets/icons/banner-2.svg" alt="banner icon" class="absolute bottom-0 z-10 right-10">
+            </div>
+            <div class="container">
+                <div class="page-banner-content h-[300px] md:h-[320px] flex justify-center items-center relative z-20">
+                    <h2 class="text-[40px] text-white font-normal">Pricing</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Banner Section End -->
+
+
+
+    <!-- Pricing Section Start -->
+    <div id="pricing" class="pricing">
+        <div class="pricing-area section-inner-main">
+            <div class="container">
+                <div class="max-w-[560px] mx-auto text-center mb-12">
+                    <p class="flex items-center justify-center gap-2 mb-2 text-gray-800">
+                        <span><img src="assets/icons/hero-icon.svg" alt="hero icon"></span>
+                        Pricing
+                        <span><img src="assets/icons/hero-icon.svg" alt="hero icon"></span>
+                    </p>
+                    <h2 class="font-normal text-gray-900 ">Best Package For You</h2>
+                </div>
+                <div class="grid gap-4 pt-8 sm:grid-cols-2 xl:grid-cols-3">
+                    <div class="grid px-6 pt-[50px] pb-10 bg-white single-pricing">
+                        <div class="text-center pricing-header">
+                            <h5 class="mb-4 text-2xl font-normal text-gray-600">Basic Plan</h5>
+                            <p class="text-[32px] font-medium text-gray-800">$8000</p>
+                        </div>
+                        <div class="w-full h-[1px] bg-[#ddd] my-5 md:mt-8 md:mb-10"></div>
+                        <div class="text-center pricing-body">
+                            <ul class="flex flex-col items-center justify-center gap-4 text-center md:gap-6">
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-600 gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Music
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-600 gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Photography &
+                                    Videography
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-600 gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Makeup
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-600 gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Accessories
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-600 gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Wedding Dress
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-400 gap-[6px]">
+                                    <span><img src="assets/icons/cross.svg" alt="cross"></span>Flower
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-400 gap-[6px]">
+                                    <span><img src="assets/icons/cross.svg" alt="cross"></span>Wedding Cake
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-400 gap-[6px]">
+                                    <span><img src="assets/icons/cross.svg" alt="cross"></span>Food
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-400 gap-[6px]">
+                                    <span><img src="assets/icons/cross.svg" alt="cross"></span>Convension Hall
+                                </li>
+                            </ul>
+                            <a href="#"
+                                class="inline-block px-8 py-4 mx-auto mt-12 text-base text-center transition duration-150 border text-medium text-main-900 border-main-900 hover:bg-main-900 hover:text-white">Get
+                                Started</a>
+                        </div>
+                    </div>
+                    <div class="grid px-6 mt-8 sm:mt-0 pt-[50px] pb-10 bg-main-900 single-pricing relative">
+                        <p
+                            class="absolute left-1/2 -top-7 -translate-x-1/2 flex justify-center items-center gap-2 text-white text-lg sm:text-xl md:text-2xl bg-[#FF9E2C] px-6 py-3 rounded-md">
+                            <span><img src="assets/icons/popular.svg" alt="popular"></span>Popular
+                        </p>
+                        <div class="text-center pricing-header">
+                            <h5 class="mb-4 text-2xl font-normal text-white">Standard Plan</h5>
+                            <p class="text-[32px] font-medium text-white">$4000</p>
+                        </div>
+                        <div class="w-full h-[1px] bg-[#ddd] my-5 md:mt-8 md:mb-10"></div>
+                        <div class="text-center pricing-body">
+                            <ul class="flex flex-col items-center justify-center gap-4 text-center md:gap-6">
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-white gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Music
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-white gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Photography &
+                                    Videography
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-white gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Makeup
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-white gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Accessories
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-white gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Wedding Dress
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-white gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Flower
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-white gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Wedding Cake
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-300 gap-[6px]">
+                                    <span><img src="assets/icons/cross.svg" alt="cross"></span>Food
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-300 gap-[6px]">
+                                    <span><img src="assets/icons/cross.svg" alt="cross"></span>Convension Hall
+                                </li>
+                            </ul>
+                            <a href="#"
+                                class="inline-block px-8 py-4 mx-auto mt-12 text-base text-center transition duration-150 bg-white border border-white text-main-900 text-medium">Get
+                                Started</a>
+                        </div>
+                    </div>
+                    <div class="grid px-6 pt-[50px] pb-10 bg-white single-pricing">
+                        <div class="text-center pricing-header">
+                            <h5 class="mb-4 text-2xl font-normal text-gray-600">Premium Plan</h5>
+                            <p class="text-[32px] font-medium text-gray-800">$12000</p>
+                        </div>
+                        <div class="w-full h-[1px] bg-[#ddd] my-5 md:mt-8 md:mb-10"></div>
+                        <div class="text-center pricing-body">
+                            <ul class="flex flex-col items-center justify-center gap-4 text-center md:gap-6">
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-600 gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Music
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-600 gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Photography &
+                                    Videography
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-600 gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Makeup
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-600 gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Accessories
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-600 gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Wedding Dress
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-600 gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Flower
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-600 gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Wedding Cake
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-600 gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Food
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-600 gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Convension Hall
+                                </li>
+                            </ul>
+                            <a href="#"
+                                class="inline-block px-8 py-4 mx-auto mt-12 text-base text-center transition duration-150 border text-medium text-main-900 border-main-900 hover:bg-main-900 hover:text-white">Get
+                                Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pricing Section End -->
+
+
+
+
+    <!-- Footer Section Start -->
+    <footer id="footer-section" class="footer-section">
+        <div class="footer-section-area bg-[#181A29] relative overflow-hidden">
+            <img src="assets/icons/footer-left.svg" alt="footer left" class="absolute left-0 z-10 bottom-20">
+            <img src="assets/icons/footer-right.svg" alt="footer left" class="absolute top-0 right-0 z-10">
+            <div class="container">
+                <div class="flex flex-col justify-center items-center gap-[30px] w-full mx-auto py-20 relative z-30">
+                    <a href="index.html" class="footer-logo">
+                        <img src="assets/icons/logo-white.svg" alt="logo">
+                    </a>
+                    <ul class="flex justify-center items-center gap-[18px] flex-wrap">
+                        <li>
+                            <a href="index.html" class="text-base font-normal text-gray-200">Home</a>
+                        </li>
+                        <li>
+                            <a href="services.html" class="text-base font-normal text-gray-200">Our Services</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html" class="text-base font-normal text-gray-200">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="product.html " class="text-base font-normal text-gray-200">Accessories</a>
+                        </li>
+                        <li>
+                            <a href="book-appoinment.html" class="text-base font-normal text-gray-200">Book
+                                Appoinmnet</a>
+                        </li>
+                    </ul>
+                    <ul class="flex gap-6 justifiy-center-items-center">
+                        <li>
+                            <a href="" target="_blank" class="text-xl text-gray-200"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="text-xl text-gray-200"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="text-xl text-gray-200"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="text-xl text-gray-200"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full h-[1px] bg-[#4d4d4f]"></div>
+            <div class="flex justify-center py-6">
+                <p class="text-base font-normal text-white">© All rights reserved Copyrights 2024</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!-- Slick Slider -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

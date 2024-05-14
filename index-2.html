@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll:smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarryMate | Home</title>
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <!-- Jost Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Sail Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <header class="bg-main-300 py-4 lg:py-0">
+        <div class="container">
+            <div class="lg:flex items-center justify-between">
+                <div class="flex justify-between w-full lg:w-auto">
+                    <div>
+                        <a href="index.html"><img src="assets/icons/logo.svg" alt="logo"></a>
+                    </div>
+                    <div class="flex items-center gap-5">
+                        <div class="flex lg:hidden items-center justify-end space-x-5">
+                            <a href="cart.html" class="relative">
+                                <img src="assets/icons/cart.svg" alt="cart icon">
+                                <span
+                                    class="w-[10px] h-[10px] rounded-full bg-[#DC2B2B] text-[8px] text-white flex justify-center items-center absolute top-1 right-0">
+                                    2</span>
+                            </a>
+                        </div>
+                        <button id="navbar-toggler" class="navbar-toggler lg:hidden open-sidebar-btn"
+                            type="button"><span></span><span></span><span></span></button>
+                    </div>
+                </div>
+                <div class="lg:flex flex-col lg:flex-row lg:items-center hidden lg:w-7/12 lg:justify-between"
+                    id="navbarContent">
+                    <nav class="header-nav">
+                        <ul class="flex flex-col lg:flex-row lg:items-center lg:gap-4 navbar-items">
+                            <li class="nav-item">
+                                <div class="block group tailwind-dropdown relative">
+                                    <button
+                                        class="flex items-center w-full justify-between nav-sub-menu-btn lg:py-7 nav-link relative border-b lg:border-b-0 border-gray-200 active">
+                                        <span
+                                            class="relative text-[#3E4767] text-base font-jost font-normal nav-link block py-3 lg:py-0 ">Home</span>
+                                        <span>
+                                            <svg class="w-4 h-4 transition duration-150 ease-in-out transform fill-current group-hover:-rotate-180"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                <path
+                                                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                            </svg>
+                                        </span>
+                                        <span class="absolute left-0 w-full bottom-[15px] fancy-border">
+                                            <img src="assets/icons/fancy-border.svg" alt="fancy border">
+                                        </span>
+                                    </button>
+                                    <ul id="nav-level-content-1"
+                                        class="hidden transition duration-150 ease-in-out origin-top transform scale-0 bg-white nav-level-content-2 lg:block lg:absolute group-hover:scale-100 min-w-44 z-50 border-t-4 border-blue-900">
+                                        <li>
+                                            <a href="index.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Home
+                                                One</a>
+                                        </li>
+                                        <li>
+                                            <a href="index-2.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Home
+                                                Two</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="services.html"
+                                    class="relative text-[#3E4767] text-base font-jost font-normal nav-link block py-3 lg:py-0 border-b lg:border-b-0 border-gray-200">Our
+                                    Services
+                                    <span class="absolute left-0 w-full -bottom-3 fancy-border">
+                                        <img src="assets/icons/fancy-border.svg" alt="fancy border">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="portfolio.html"
+                                    class="relative text-[#3E4767] text-base font-jost font-normal nav-link block py-3 lg:py-0 border-b lg:border-b-0 border-gray-200">Portfolio
+                                    <span class="absolute left-0 w-full -bottom-3 fancy-border">
+                                        <img src="assets/icons/fancy-border.svg" alt="fancy border">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="product.html"
+                                    class="relative text-[#3E4767] text-base font-jost font-normal nav-link block py-3 lg:py-0 border-b lg:border-b-0 border-gray-200">Accessories
+                                    <span class="absolute left-0 w-full -bottom-3 fancy-border">
+                                        <img src="assets/icons/fancy-border.svg" alt="fancy border">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="block group tailwind-dropdown relative">
+                                    <button
+                                        class="flex items-center w-full justify-between nav-sub-menu-btn lg:py-7 nav-link relative">
+                                        <span
+                                            class="relative text-[#3E4767] text-base font-jost font-normal nav-link block py-3 lg:py-0 ">Pages</span>
+                                        <span>
+                                            <svg class="w-4 h-4 transition duration-150 ease-in-out transform fill-current group-hover:-rotate-180"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                <path
+                                                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                            </svg>
+                                        </span>
+                                        <span class="absolute left-0 w-full bottom-[15px] fancy-border">
+                                            <img src="assets/icons/fancy-border.svg" alt="fancy border">
+                                        </span>
+                                    </button>
+                                    <ul id="nav-level-content-2"
+                                        class="hidden transition duration-150 ease-in-out origin-top transform scale-0 bg-white nav-level-content-2 lg:block lg:absolute group-hover:scale-100 min-w-44 z-50 border-t-4 border-blue-900">
+                                        <li>
+                                            <a href="blogs.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="pricing.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Pricing</a>
+                                        </li>
+                                        <li>
+                                            <a href="teams.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Teams</a>
+                                        </li>
+                                        <li>
+                                            <a href="testimonials.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Testimonials</a>
+                                        </li>
+                                        <li>
+                                            <a href="book-appoinment.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Book
+                                                Appoinment</a>
+                                        </li>
+                                        <li class="relative px-3 py-1 rounded-sm hover:bg-gray-100">
+                                            <button
+                                                class="flex items-center w-full text-left outline-none focus:outline-none nav-sub-menu-btn">
+                                                <span class="flex-1 pr-1">Sub Menu</span>
+                                                <span class="mr-auto">
+                                                    <svg class="w-4 h-4 transition duration-150 ease-in-out fill-current"
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                        <path
+                                                            d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                            <ul id="nav-level-content-3"
+                                                class="top-0 le right-0 hidden transition duration-150 ease-in-out origin-top-left bg-white md:block lg:absolute min-w-44 z-50 border-t-4 border-blue-900 nav-level-content-3">
+                                                <li>
+                                                    <a href="#"
+                                                        class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Demo
+                                                        Sub
+                                                        Menu</a>
+                                                </li>
+                                                <li class="relative px-3 py-1 rounded-sm hover:bg-gray-100">
+                                                    <button
+                                                        class="flex items-center w-full text-left outline-none focus:outline-none nav-sub-menu-btn">
+                                                        <span class="flex-1 pr-1">Sub Menu</span>
+                                                        <span class="mr-auto">
+                                                            <svg class="w-4 h-4 transition duration-150 ease-in-out fill-current"
+                                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                                <path
+                                                                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                    <ul id="nav-level-content-4"
+                                                        class="top-0 right-0 hidden transition duration-150 ease-in-out origin-top-left bg-white md:block lg:absolute min-w-40 z-50 border-t-4 border-blue-900 nav-level-content-4">
+                                                        <li>
+                                                            <a href="#"
+                                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Demo
+                                                                Sub
+                                                                Menu</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"
+                                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Demo
+                                                                Sub
+                                                                Menu</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Demo
+                                                        Sub
+                                                        Menu</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Demo
+                                                        Sub
+                                                        Menu</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="signin.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Sign
+                                                In</a>
+                                        </li>
+                                        <li>
+                                            <a href="signup.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Sign
+                                                Up</a>
+                                        </li>
+                                        <li>
+                                            <a href="404.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Not
+                                                Found</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="hidden lg:flex items-center justify-end gap-5">
+                        <div class="relative flex items-center">
+                            <div class="hidden absolute top-1/2 -translate-y-1/2 right-10 header-search-input">
+                                <input type="text" name="search" id="search"
+                                    class="block min-w-80 bg-transparent px-5 py-3 rounded-md border-1 border-main-600 text-gray-600 ring-1 ring-inset ring-main-600 focus:ring-1  placeholder:text-gray-600 focus:ring-main-900 placeholder:text-base outline-none"
+                                    placeholder="Search here...">
+                            </div>
+                            <button class="header-search-btn text-[20px] text-main-900 pt-1"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                        <a href="cart.html" class="relative">
+                            <img src="assets/icons/cart.svg" alt="cart icon">
+                            <span
+                                class="w-[10px] h-[10px] rounded-full bg-[#DC2B2B] text-[8px] text-white flex justify-center items-center absolute top-1 right-0">
+                                2</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+
+
+
+    <!-- Hero Section Start -->
+    <div id="hero" class="py-10 bg-blue-400 md:px-16 md:py-16 bg hero">
+        <div class="hero-area">
+            <div class="container lg:p-0">
+                <div class="grid items-center grid-cols-12 gap-4">
+                    <div class="col-span-12 lg:col-span-6">
+                        <div class="mb-6 lg:mb-0">
+                            <p class="flex items-center gap-2 mb-2 text-gray-800">
+                                <span><img src="assets/icons/hero-icon.svg" alt="hero icon"></span>
+                                Your wedding planner
+                                <span><img src="assets/icons/hero-icon.svg" alt="hero icon"></span>
+                            </p>
+                            <h1 class="mb-2 text-gray-900 text-4xl md:text-5xl xl:text-[64px] xl:leading-[75px]">We
+                                create
+                                luxury
+                                celebrations that
+                                are
+                                unforgettable.</h1>
+                            <div class="py-4 overflow-hidden rounded-lg lg:hidden">
+                                <img class="w-full h-full" src="assets/images/hero-2.png" alt="hero 2">
+                            </div>
+                            <p class="mb-8 text-base text-gray-600 lg:w-3/4">The ideal sort of love is one that
+                                calms
+                                our
+                                thoughts,
+                                ignites a fire in our hearts, and
+                                wakes our souls, inspiring us
+                                to strive for more.</p>
+                            <a href="portfolio.html" class="px-6 py-4 text-white bg-blue-900">Our
+                                Portfolio</a>
+                        </div>
+                    </div>
+                    <div class="relative hidden col-span-12 lg:col-span-6 lg:block">
+                        <img src="assets/images/hero-2-bg.png" alt="hero bg"
+                            class="hidden lg:block absolute left[65px] -top-[50px]">
+                        <div class="relative grid lg:grid-cols-2 gap-[30px]">
+                            <img class="absolute z-10 -left-[105px] -translate-y-1/2 top-1/2"
+                                src="assets/icons/ornaments.svg" alt="ornaments">
+                            <img class="absolute -right-[60px] z-10 -translate-y-1/2 top-1/2"
+                                src="assets/icons/ornaments-2.svg" alt="ornaments">
+                            <img class="absolute z-30 -translate-x-1/2 -translate-y-1/2 left-1/2 top-2/3"
+                                src="assets/icons/ornaments-3.svg" alt="ornaments">
+                            <div class="relative z-20 lg-[350px] xl:h-[490px] rounded-[80px] overflow-hidden">
+                                <img class="w-full h-full rounded-[80px]" src="assets/images/hero-2.png" alt="hero 2">
+                            </div>
+                            <div class="relative z-20 lg-[350px] xl:h-[490px] rounded-[80px] overflow-hidden">
+                                <img class="w-full h-full rounded-[80px]" src="assets/images/hero-3.png" alt="hero 3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section End -->
+
+
+
+
+    <!-- Our Services Section Start -->
+    <div id="our-services" class="our-services section">
+        <div class="our-services-area">
+            <div class="max-w-[560px] mx-auto text-center mb-12">
+                <p class="flex items-center justify-center gap-2 mb-2 text-gray-800">
+                    <span><img src="assets/icons/hero-icon.svg" alt="hero icon"></span>
+                    Your wedding planner
+                    <span><img src="assets/icons/hero-icon.svg" alt="hero icon"></span>
+                </p>
+                <h2 class="font-normal text-gray-900 ">We can plan your entire wedding</h2>
+            </div>
+            <div class="container">
+                <div class="grid items-stretch gap-8 sm:grid-cols-2 xl:grid-cols-4">
+                    <div
+                        class="grid justify-center gap-3 p-3 text-center rounded-[20px] bg-main-300 hover:bg-main-900 transition duration-150 px-[14px] pt-[30px] pb-6 group">
+                        <div class="mx-auto text-center">
+                            <img src="assets/icons/services-1.svg" alt="service 1">
+                        </div>
+                        <h5 class="text-2xl font-normal text-gray-800 transition duration-150 group-hover:text-white">
+                            Photography</h5>
+                        <p class="text-base font-normal text-gray-500 transition duration-150 group-hover:text-white">
+                            Capture life's moments with our expertise. A
+                            product demonstration, family snapshot, or
+                            event.</p>
+                        <a class="text-base font-medium text-gray-600 underline transition duration-150 group-hover:text-white"
+                            href="#">Read
+                            More</a>
+                    </div>
+                    <div
+                        class="grid justify-center gap-3 p-3 text-center rounded-[20px] bg-main-300 hover:bg-main-900 transition duration-150 px-[14px] pt-[30px] pb-6 group">
+                        <div class="mx-auto text-center">
+                            <img src="assets/icons/services-2.svg" alt="service 2">
+                        </div>
+                        <h5 class="text-2xl font-normal text-gray-800 transition duration-150 group-hover:text-white">
+                            Makeup</h5>
+                        <p class="text-base font-normal text-gray-500 transition duration-150 group-hover:text-white">
+                            Capture life's moments with our expertise. A
+                            product demonstration, family snapshot, or
+                            event.</p>
+                        <a class="text-base font-medium text-gray-600 underline transition duration-150 group-hover:text-white"
+                            href="#">Read
+                            More</a>
+                    </div>
+                    <div
+                        class="grid justify-center gap-3 p-3 text-center rounded-[20px] bg-main-300 hover:bg-main-900 transition duration-150 px-[14px] pt-[30px] pb-6 group">
+                        <div class="mx-auto text-center">
+                            <img src="assets/icons/services-3.svg" alt="service 3">
+                        </div>
+                        <h5 class="text-2xl font-normal text-gray-800 transition duration-150 group-hover:text-white">
+                            Wedding Dress</h5>
+                        <p class="text-base font-normal text-gray-500 transition duration-150 group-hover:text-white">
+                            Capture life's moments with our expertise. A
+                            product demonstration, family snapshot, or
+                            event.</p>
+                        <a class="text-base font-medium text-gray-600 underline transition duration-150 group-hover:text-white"
+                            href="#">Read
+                            More</a>
+                    </div>
+                    <div
+                        class="grid justify-center gap-3 p-3 text-center rounded-[20px] bg-main-300 hover:bg-main-900 transition duration-150 px-[14px] pt-[30px] pb-6 group">
+                        <div class="mx-auto text-center">
+                            <img src="assets/icons/services-4.svg" alt="service 4">
+                        </div>
+                        <h5 class="text-2xl font-normal text-gray-800 transition duration-150 group-hover:text-white">
+                            Decoration</h5>
+                        <p class="text-base font-normal text-gray-500 transition duration-150 group-hover:text-white">
+                            Capture life's moments with our expertise. A
+                            product demonstration, family snapshot, or
+                            event.</p>
+                        <a class="text-base font-medium text-gray-600 underline transition duration-150 group-hover:text-white"
+                            href="#">Read
+                            More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Services Section End -->
+
+
+
+
+    <!-- Popular Collection Section Start -->
+    <div id="popular-section" class="popular-section">
+        <div class="popular-section-area section-inner-main">
+            <div class="container">
+                <div class="max-w-[560px] mx-auto text-center mb-12">
+                    <p class="flex items-center justify-center gap-2 mb-2 text-gray-800">
+                        <span><img src="assets/icons/hero-icon.svg" alt="hero icon"></span>
+                        Our Products
+                        <span><img src="assets/icons/hero-icon.svg" alt="hero icon"></span>
+                    </p>
+                    <h2 class="font-normal text-gray-900 ">Popular Collection</h2>
+                </div>
+                <div class="grid items-stretch gap-6 sm:grid-cols-2 xl:grid-cols-3">
+                    <div class="p-5 bg-white single-collection">
+                        <div class="relative block mb-4 overflow-hidden group">
+                            <a href="product-details.html" class="w-full h-[300px] xl:h-[360px] block overflow-hidden">
+                                <img class="object-cover w-full h-full transition duration-150 group-hover:scale-110"
+                                    src="assets/images/collection-1.png" alt="collection images">
+                            </a>
+                            <div class="absolute top-4 right-4">
+                                <button
+                                    class="w-9 h-9 rounded-full border border-white p-[6] flex justify-center items-center text-white hover:bg-white hover:text-[#F73C3B] transition duration-150"><i
+                                        class="fa-regular fa-heart"></i></button>
+                            </div>
+                            <a href="#"
+                                class="absolute left-0 bottom-0 p-[10px] text-white bg-blue-900 text-base font-medium z-10">
+                                Flower</a>
+                        </div>
+                        <a href="product-details.html" class="inline-block mb-3 text-xl font-normal text-gray-600">Short
+                            Sleeve Low
+                            Back
+                            Stretch Lace
+                            Wedding Dress</a>
+                        <p class="text-xl font-medium text-main-900">$499.00</p>
+                    </div>
+                    <div class="p-5 bg-white single-collection">
+                        <div class="relative block mb-4 overflow-hidden group">
+                            <a href="product-details.html" class="w-full h-[300px] xl:h-[360px] block overflow-hidden">
+                                <img class="object-cover w-full h-full transition duration-150 group-hover:scale-110"
+                                    src="assets/images/collection-2.png" alt="collection images">
+                            </a>
+                            <div class="absolute top-4 right-4">
+                                <button
+                                    class="w-9 h-9 rounded-full border border-white p-[6] flex justify-center items-center text-white hover:bg-white hover:text-[#F73C3B] transition duration-150"><i
+                                        class="fa-regular fa-heart"></i></button>
+                            </div>
+                            <a href="#"
+                                class="absolute left-0 bottom-0 p-[10px] text-white bg-blue-900 text-base font-medium z-10">
+                                Wedding Dress</a>
+                        </div>
+                        <a href="product-details.html" class="inline-block mb-3 text-xl font-normal text-gray-600">Short
+                            Sleeve Low
+                            Back
+                            Stretch Lace
+                            Wedding Dress</a>
+                        <p class="text-xl font-medium text-main-900">$499.00</p>
+                    </div>
+                    <div class="p-5 bg-white single-collection">
+                        <div class="relative block mb-4 overflow-hidden group">
+                            <a href="product-details.html" class="w-full h-[300px] xl:h-[360px] block overflow-hidden">
+                                <img class="object-cover w-full h-full transition duration-150 group-hover:scale-110"
+                                    src="assets/images/collection-3.png" alt="collection images">
+                            </a>
+                            <div class="absolute top-4 right-4">
+                                <button
+                                    class="w-9 h-9 rounded-full border border-white p-[6] flex justify-center items-center text-white hover:bg-white hover:text-[#F73C3B] transition duration-150"><i
+                                        class="fa-regular fa-heart"></i></button>
+                            </div>
+                            <a href="#"
+                                class="absolute left-0 bottom-0 p-[10px] text-white bg-blue-900 text-base font-medium z-10">
+                                Accessories</a>
+                        </div>
+                        <a href="product-details.html" class="inline-block mb-3 text-xl font-normal text-gray-600">Short
+                            Sleeve Low
+                            Back
+                            Stretch Lace
+                            Wedding Dress</a>
+                        <p class="text-xl font-medium text-main-900">$499.00</p>
+                    </div>
+                    <div class="p-5 bg-white single-collection">
+                        <div class="relative block mb-4 overflow-hidden group">
+                            <a href="product-details.html" class="w-full h-[300px] xl:h-[360px] block overflow-hidden">
+                                <img class="object-cover w-full h-full transition duration-150 group-hover:scale-110"
+                                    src="assets/images/collection-4.png" alt="collection images">
+                            </a>
+                            <div class="absolute top-4 right-4">
+                                <button
+                                    class="w-9 h-9 rounded-full border border-white p-[6] flex justify-center items-center text-white hover:bg-white hover:text-[#F73C3B] transition duration-150"><i
+                                        class="fa-regular fa-heart"></i></button>
+                            </div>
+                            <a href="#"
+                                class="absolute left-0 bottom-0 p-[10px] text-white bg-blue-900 text-base font-medium z-10">
+                                Wedding Cake</a>
+                        </div>
+                        <a href="product-details.html" class="inline-block mb-3 text-xl font-normal text-gray-600">Short
+                            Sleeve Low
+                            Back
+                            Stretch Lace
+                            Wedding Dress</a>
+                        <p class="text-xl font-medium text-main-900">$499.00</p>
+                    </div>
+                    <div class="p-5 bg-white single-collection">
+                        <div class="relative block mb-4 overflow-hidden group">
+                            <a href="product-details.html" class="w-full h-[300px] xl:h-[360px] block overflow-hidden">
+                                <img class="object-cover w-full h-full transition duration-150 group-hover:scale-110"
+                                    src="assets/images/collection-5.png" alt="collection images">
+                            </a>
+                            <div class="absolute top-4 right-4">
+                                <button
+                                    class="w-9 h-9 rounded-full border border-white p-[6] flex justify-center items-center text-white hover:bg-white hover:text-[#F73C3B] transition duration-150"><i
+                                        class="fa-regular fa-heart"></i></button>
+                            </div>
+                            <a href="#"
+                                class="absolute left-0 bottom-0 p-[10px] text-white bg-blue-900 text-base font-medium z-10">
+                                Decoration</a>
+                        </div>
+                        <a href="product-details.html" class="inline-block mb-3 text-xl font-normal text-gray-600">Short
+                            Sleeve Low
+                            Back
+                            Stretch Lace
+                            Wedding Dress</a>
+                        <p class="text-xl font-medium text-main-900">$499.00</p>
+                    </div>
+                    <div class="p-5 bg-white single-collection">
+                        <div class="relative block mb-4 overflow-hidden group">
+                            <a href="product-details.html" class="w-full h-[300px] xl:h-[360px] block overflow-hidden">
+                                <img class="object-cover w-full h-full transition duration-150 group-hover:scale-110"
+                                    src="assets/images/collection-6.png" alt="collection images">
+                            </a>
+                            <div class="absolute top-4 right-4">
+                                <button
+                                    class="w-9 h-9 rounded-full border border-white p-[6] flex justify-center items-center text-white hover:bg-white hover:text-[#F73C3B] transition duration-150"><i
+                                        class="fa-regular fa-heart"></i></button>
+                            </div>
+                            <a href="#"
+                                class="absolute left-0 bottom-0 p-[10px] text-white bg-blue-900 text-base font-medium z-10">
+                                Accessories</a>
+                        </div>
+                        <a href="product-details.html" class="inline-block mb-3 text-xl font-normal text-gray-600">Short
+                            Sleeve Low
+                            Back
+                            Stretch Lace
+                            Wedding Dress</a>
+                        <p class="text-xl font-medium text-main-900">$499.00</p>
+                    </div>
+                </div>
+                <div class="flex justify-center pt-14">
+                    <a href="collection.html" class="inline-block px-8 py-4 text-white bg-main-900">View All</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popular Collection Section End -->
+
+
+
+
+    <!-- Team Section Start -->
+    <div id="team" class="team">
+        <div class="team-area section-inner-blue">
+            <div class="container">
+                <div class="flex flex-col items-center justify-between gap-4 mb-12 md:flex-row">
+                    <div class="max-w-[560px]">
+                        <p class="flex items-center gap-2 mb-2 text-gray-800">
+                            <span><img src="assets/icons/hero-icon.svg" alt="hero icon"></span>
+                            Our Team
+                            <span><img src="assets/icons/hero-icon.svg" alt="hero icon"></span>
+                        </p>
+                        <h2 class="font-normal text-gray-900 ">Bridesmaids & Groomsmen</h2>
+                    </div>
+                    <div class="flex items-center justify-center gap-8">
+                        <button id="team-prev" class="prev-btn w-[70px] md:w-[100px]">
+                            <img src="assets/icons/prev-arrow.svg" alt="prev icon">
+                        </button>
+                        <button id="team-next" class="next-btn w-[70px] md:w-[100px]">
+                            <img src="assets/icons/next-arrow.svg" alt="next icon">
+                        </button>
+                    </div>
+                </div>
+                <div class="teamsSlider">
+                    <div class="single-team group p-[10px] pb-5 bg-white">
+                        <div class="relative block w-full mb-3 overflow-hidden">
+                            <a href="#" class="block w-full overflow-hidden h-[280px]">
+                                <img class="object-cover w-full h-full" src="assets/images/team-1.png"
+                                    alt="team images">
+                            </a>
+                            <div class="absolute transition-all duration-150 -translate-x-1/2 left-1/2 bottom-4">
+                                <ul class="flex items-center gap-4">
+                                    <li>
+                                        <a class="w-[30px] h-[30px] rounded-md flex justify-center items-center bg-white text-gray-500 hover:text-white hover:bg-blue-900 transition duration-150"
+                                            href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="w-[30px] h-[30px] rounded-md flex justify-center items-center bg-white text-gray-500 hover:text-white hover:bg-blue-900 transition duration-150"
+                                            href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="w-[30px] h-[30px] rounded-md flex justify-center items-center bg-white text-gray-500 hover:text-white hover:bg-blue-900 transition duration-150"
+                                            href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a href="#" class="inline-block mb-2 text-2xl font-normal text-gray-600">Marion L.
+                                Tapiaapher</a>
+                            <p class="text-base font-normal text-gray-500">Bridesmaid</p>
+                        </div>
+                    </div>
+                    <div class="single-team group p-[10px] pb-5 bg-white">
+                        <div class="relative block w-full mb-3 overflow-hidden">
+                            <a href="#" class="block w-full overflow-hidden h-[280px]">
+                                <img class="object-cover w-full h-full" src="assets/images/team-2.png"
+                                    alt="team images">
+                            </a>
+                            <div class="absolute transition-all duration-150 -translate-x-1/2 left-1/2 bottom-4">
+                                <ul class="flex items-center gap-4">
+                                    <li>
+                                        <a class="w-[30px] h-[30px] rounded-md flex justify-center items-center bg-white text-gray-500 hover:text-white hover:bg-blue-900 transition duration-150"
+                                            href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="w-[30px] h-[30px] rounded-md flex justify-center items-center bg-white text-gray-500 hover:text-white hover:bg-blue-900 transition duration-150"
+                                            href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="w-[30px] h-[30px] rounded-md flex justify-center items-center bg-white text-gray-500 hover:text-white hover:bg-blue-900 transition duration-150"
+                                            href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a href="#" class="inline-block mb-2 text-2xl font-normal text-gray-600">Michael J. Norton
+                            </a>
+                            <p class="text-base font-normal text-gray-500">Groomsmen</p>
+                        </div>
+                    </div>
+                    <div class="single-team group p-[10px] pb-5 bg-white">
+                        <div class="relative block w-full mb-3 overflow-hidden">
+                            <a href="#" class="block w-full overflow-hidden h-[280px]">
+                                <img class="object-cover w-full h-full" src="assets/images/team-3.png"
+                                    alt="team images">
+                            </a>
+                            <div class="absolute transition-all duration-150 -translate-x-1/2 left-1/2 bottom-4">
+                                <ul class="flex items-center gap-4">
+                                    <li>
+                                        <a class="w-[30px] h-[30px] rounded-md flex justify-center items-center bg-white text-gray-500 hover:text-white hover:bg-blue-900 transition duration-150"
+                                            href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="w-[30px] h-[30px] rounded-md flex justify-center items-center bg-white text-gray-500 hover:text-white hover:bg-blue-900 transition duration-150"
+                                            href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="w-[30px] h-[30px] rounded-md flex justify-center items-center bg-white text-gray-500 hover:text-white hover:bg-blue-900 transition duration-150"
+                                            href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a href="#" class="inline-block mb-2 text-2xl font-normal text-gray-600">Carlos M.
+                                Deleon</a>
+                            <p class="text-base font-normal text-gray-500">Bridesmaid</p>
+                        </div>
+                    </div>
+                    <div class="single-team group p-[10px] pb-5 bg-white">
+                        <div class="relative block w-full mb-3 overflow-hidden">
+                            <a href="#" class="block w-full overflow-hidden h-[280px]">
+                                <img class="object-cover w-full h-full" src="assets/images/team-4.png"
+                                    alt="team images">
+                            </a>
+                            <div class="absolute transition-all duration-150 -translate-x-1/2 left-1/2 bottom-4">
+                                <ul class="flex items-center gap-4">
+                                    <li>
+                                        <a class="w-[30px] h-[30px] rounded-md flex justify-center items-center bg-white text-gray-500 hover:text-white hover:bg-blue-900 transition duration-150"
+                                            href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="w-[30px] h-[30px] rounded-md flex justify-center items-center bg-white text-gray-500 hover:text-white hover:bg-blue-900 transition duration-150"
+                                            href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="w-[30px] h-[30px] rounded-md flex justify-center items-center bg-white text-gray-500 hover:text-white hover:bg-blue-900 transition duration-150"
+                                            href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a href="#" class="inline-block mb-2 text-2xl font-normal text-gray-600">Javier M. Saladino
+                            </a>
+                            <p class="text-base font-normal text-gray-500">Groomsmen</p>
+                        </div>
+                    </div>
+                    <div class="single-team group p-[10px] pb-5 bg-white">
+                        <div class="relative block w-full mb-3 overflow-hidden">
+                            <a href="#" class="block w-full overflow-hidden h-[280px]">
+                                <img class="object-cover w-full h-full" src="assets/images/team-1.png"
+                                    alt="team images">
+                            </a>
+                            <div class="absolute transition-all duration-150 -translate-x-1/2 left-1/2 bottom-4">
+                                <ul class="flex items-center gap-4">
+                                    <li>
+                                        <a class="w-[30px] h-[30px] rounded-md flex justify-center items-center bg-white text-gray-500 hover:text-white hover:bg-blue-900 transition duration-150"
+                                            href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="w-[30px] h-[30px] rounded-md flex justify-center items-center bg-white text-gray-500 hover:text-white hover:bg-blue-900 transition duration-150"
+                                            href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="w-[30px] h-[30px] rounded-md flex justify-center items-center bg-white text-gray-500 hover:text-white hover:bg-blue-900 transition duration-150"
+                                            href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a href="#" class="inline-block mb-2 text-2xl font-normal text-gray-600">Marion L.
+                                Tapiaapher</a>
+                            <p class="text-base font-normal text-gray-500">Bridesmaid</p>
+                        </div>
+                    </div>
+                    <div class="single-team group p-[10px] pb-5 bg-white">
+                        <div class="relative block w-full mb-3 overflow-hidden">
+                            <a href="#" class="block w-full overflow-hidden h-[280px]">
+                                <img class="object-cover w-full h-full" src="assets/images/team-2.png"
+                                    alt="team images">
+                            </a>
+                            <div class="absolute transition-all duration-150 -translate-x-1/2 left-1/2 bottom-4">
+                                <ul class="flex items-center gap-4">
+                                    <li>
+                                        <a class="w-[30px] h-[30px] rounded-md flex justify-center items-center bg-white text-gray-500 hover:text-white hover:bg-blue-900 transition duration-150"
+                                            href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="w-[30px] h-[30px] rounded-md flex justify-center items-center bg-white text-gray-500 hover:text-white hover:bg-blue-900 transition duration-150"
+                                            href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="w-[30px] h-[30px] rounded-md flex justify-center items-center bg-white text-gray-500 hover:text-white hover:bg-blue-900 transition duration-150"
+                                            href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a href="#" class="inline-block mb-2 text-2xl font-normal text-gray-600">Michael J. Norton
+                            </a>
+                            <p class="text-base font-normal text-gray-500">Groomsmen</p>
+                        </div>
+                    </div>
+                    <div class="single-team group p-[10px] pb-5 bg-white">
+                        <div class="relative block w-full mb-3 overflow-hidden">
+                            <a href="#" class="block w-full overflow-hidden h-[280px]">
+                                <img class="object-cover w-full h-full" src="assets/images/team-3.png"
+                                    alt="team images">
+                            </a>
+                            <div class="absolute transition-all duration-150 -translate-x-1/2 left-1/2 bottom-4">
+                                <ul class="flex items-center gap-4">
+                                    <li>
+                                        <a class="w-[30px] h-[30px] rounded-md flex justify-center items-center bg-white text-gray-500 hover:text-white hover:bg-blue-900 transition duration-150"
+                                            href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="w-[30px] h-[30px] rounded-md flex justify-center items-center bg-white text-gray-500 hover:text-white hover:bg-blue-900 transition duration-150"
+                                            href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="w-[30px] h-[30px] rounded-md flex justify-center items-center bg-white text-gray-500 hover:text-white hover:bg-blue-900 transition duration-150"
+                                            href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a href="#" class="inline-block mb-2 text-2xl font-normal text-gray-600">Carlos M.
+                                Deleon</a>
+                            <p class="text-base font-normal text-gray-500">Bridesmaid</p>
+                        </div>
+                    </div>
+                    <div class="single-team group p-[10px] pb-5 bg-white">
+                        <div class="relative block w-full mb-3 overflow-hidden">
+                            <a href="#" class="block w-full overflow-hidden h-[280px]">
+                                <img class="object-cover w-full h-full" src="assets/images/team-4.png"
+                                    alt="team images">
+                            </a>
+                            <div class="absolute transition-all duration-150 -translate-x-1/2 left-1/2 bottom-4">
+                                <ul class="flex items-center gap-4">
+                                    <li>
+                                        <a class="w-[30px] h-[30px] rounded-md flex justify-center items-center bg-white text-gray-500 hover:text-white hover:bg-blue-900 transition duration-150"
+                                            href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="w-[30px] h-[30px] rounded-md flex justify-center items-center bg-white text-gray-500 hover:text-white hover:bg-blue-900 transition duration-150"
+                                            href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="w-[30px] h-[30px] rounded-md flex justify-center items-center bg-white text-gray-500 hover:text-white hover:bg-blue-900 transition duration-150"
+                                            href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a href="#" class="inline-block mb-2 text-2xl font-normal text-gray-600">Javier M. Saladino
+                            </a>
+                            <p class="text-base font-normal text-gray-500">Groomsmen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team Section End -->
+
+
+
+
+    <!-- About Us Section Start -->
+    <div id="about-us" class="about-us">
+        <div class="about-us-area section-inner-main">
+            <div class="container">
+                <div class="lg:hidden max-w-[560px] mx-auto text-center mb-12">
+                    <p class="flex items-center justify-center gap-2 mb-2 text-gray-800">
+                        <span><img src="assets/icons/hero-icon.svg" alt="hero icon"></span>
+                        About Us
+                        <span><img src="assets/icons/hero-icon.svg" alt="hero icon"></span>
+                    </p>
+                    <h2 class="font-normal text-gray-900 ">Let us handle the details, while
+                        you focus on
+                        forever</h2>
+                </div>
+                <div class="grid grid-cols-12 gap-4 xl:pb-[140px] items-center xl:items-start">
+                    <div class="col-span-12 lg:col-span-6 xl:col-span-4">
+                        <div class="relative w-full md:h-[560px] about-us-img-box mb-4 md:mb-0">
+                            <img class="object-cover w-full h-full" src="assets/images/about-img-1.png"
+                                alt="about us images">
+                            <img class="hidden xl:block absolute -bottom-[140px] -right-[80%]"
+                                src="assets/images/about-img-2.png" alt="about us images">
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-6 xl:col-span-8">
+                        <div class="about-us-content lg:max-w-[560px]">
+                            <div class="xl:mb-12">
+                                <p class="hidden lg:flex items-center gap-2 mb-2 text-gray-800">
+                                    <span><img src="assets/icons/hero-icon.svg" alt="hero icon"></span>
+                                    About Us
+                                    <span><img src="assets/icons/hero-icon.svg" alt="hero icon"></span>
+                                </p>
+                                <h2 class="hidden lg:block font-normal text-gray-900 ">Let us handle the details, while
+                                    you focus on
+                                    forever.</h2>
+                                <p class="xl:pt-4 text-lg font-normal text-gray-500">From intimate ceremonies to grand
+                                    celebrations, our experienced
+                                    team is dedicated to orchestrating every aspect of your
+                                    special day with precision and elegance. We bring your wedding vision to life,
+                                    be it
+                                    on a beach, in a city, or a
+                                    luxurious destination.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Us Section End -->
+
+
+
+
+    <!-- Testimonial Section Start -->
+    <div id="testimonial-2" class="testimonial-2">
+        <div class="testimonial-2-area section-dark-blue">
+            <div class="container">
+                <div class="max-w-[560px] mx-auto text-center mb-12">
+                    <p class="flex items-center justify-center gap-2 mb-2 text-white">
+                        <span><img src="assets/icons/hero-icon.svg" alt="hero icon"></span>
+                        Testimonials
+                        <span><img src="assets/icons/hero-icon.svg" alt="hero icon"></span>
+                    </p>
+                    <h2 class="font-normal text-white ">What Our Clients Say</h2>
+                </div>
+                <div class="testimonial-2-wrapper">
+                    <div
+                        class="relative bg-white single-testimonial-2 p-6 md:p-[30px] rounded-tr-[16px] rounded-bl-[16px] md:rounded-tr-[30px] md:rounded-bl-[30px]">
+                        <img src="assets/icons/quotes.svg" alt="quotes"
+                            class="absolute bottom-5 right-[90px] hidden md:block quotes">
+                        <div class="testimonial-content">
+                            <ul class="flex items-center gap-2 mb-3 md:mb-[18px]">
+                                <li class="text-base md:text-xl text-[#FFC138]"><i class="fa-solid fa-star"></i></li>
+                                <li class="text-base md:text-xl text-[#FFC138]"><i class="fa-solid fa-star"></i></li>
+                                <li class="text-base md:text-xl text-[#FFC138]"><i class="fa-solid fa-star"></i></li>
+                                <li class="text-base md:text-xl text-[#FFC138]"><i class="fa-solid fa-star"></i></li>
+                                <li class="text-base md:text-xl text-[#FFC138]"><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                            <p class="text-base md:text-xl text-gray-600 font-normal leading-[30px] mb-6">Incredible
+                                wedding
+                                management
+                                service! Their organization and attention to detail made our special day unforgettable.
+                                They planned every aspect and went above and beyond to meet our needs. For stress-free
+                                wedding planning, I definitely
+                                suggest them!</p>
+                            <div class="flex items-center gap-[18px]">
+                                <div class="w-[54px] h-[54px] rounded-full overflow-hidden">
+                                    <img class="w-full h-full rounded-full" src="assets/images/author-1.png"
+                                        alt="author">
+                                </div>
+                                <div>
+                                    <h4 class="mb-2 text-xl font-normal text-gray-800">Mr & Mrs. Joseph</h4>
+                                    <p class="text-base font-normal text-gray-500">25 Feb, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="relative bg-white single-testimonial-2 p-6 md:p-[30px] rounded-tr-[16px] rounded-bl-[16px] md:rounded-tr-[30px] md:rounded-bl-[30px]">
+                        <img src="assets/icons/quotes.svg" alt="quotes"
+                            class="absolute bottom-5 right-[90px] hidden md:block quotes">
+                        <div class="testimonial-content">
+                            <ul class="flex items-center gap-2 mb-3 md:mb-[18px]">
+                                <li class="text-base md:text-xl text-[#FFC138]"><i class="fa-solid fa-star"></i></li>
+                                <li class="text-base md:text-xl text-[#FFC138]"><i class="fa-solid fa-star"></i></li>
+                                <li class="text-base md:text-xl text-[#FFC138]"><i class="fa-solid fa-star"></i></li>
+                                <li class="text-base md:text-xl text-[#FFC138]"><i class="fa-solid fa-star"></i></li>
+                                <li class="text-base md:text-xl text-[#FFC138]"><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                            <p class="text-base md:text-xl text-gray-600 font-normal leading-[30px] mb-6">Incredible
+                                wedding
+                                management
+                                service! Their organization and attention to detail made our special day unforgettable.
+                                They planned every aspect and went above and beyond to meet our needs. For stress-free
+                                wedding planning, I definitely
+                                suggest them!</p>
+                            <div class="flex items-center gap-[18px]">
+                                <div class="w-[54px] h-[54px] rounded-full overflow-hidden">
+                                    <img class="w-full h-full rounded-full" src="assets/images/author-1.png"
+                                        alt="author">
+                                </div>
+                                <div>
+                                    <h4 class="mb-2 text-xl font-normal text-gray-800">Mr & Mrs. Joseph</h4>
+                                    <p class="text-base font-normal text-gray-500">25 Feb, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="relative bg-white single-testimonial-2 p-6 md:p-[30px] rounded-tr-[16px] rounded-bl-[16px] md:rounded-tr-[30px] md:rounded-bl-[30px]">
+                        <img src="assets/icons/quotes.svg" alt="quotes"
+                            class="absolute bottom-5 right-[90px] hidden md:block quotes">
+                        <div class="testimonial-content">
+                            <ul class="flex items-center gap-2 mb-3 md:mb-[18px]">
+                                <li class="text-base md:text-xl text-[#FFC138]"><i class="fa-solid fa-star"></i></li>
+                                <li class="text-base md:text-xl text-[#FFC138]"><i class="fa-solid fa-star"></i></li>
+                                <li class="text-base md:text-xl text-[#FFC138]"><i class="fa-solid fa-star"></i></li>
+                                <li class="text-base md:text-xl text-[#FFC138]"><i class="fa-solid fa-star"></i></li>
+                                <li class="text-base md:text-xl text-[#FFC138]"><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                            <p class="text-base md:text-xl text-gray-600 font-normal leading-[30px] mb-6">Incredible
+                                wedding
+                                management
+                                service! Their organization and attention to detail made our special day unforgettable.
+                                They planned every aspect and went above and beyond to meet our needs. For stress-free
+                                wedding planning, I definitely
+                                suggest them!</p>
+                            <div class="flex items-center gap-[18px]">
+                                <div class="w-[54px] h-[54px] rounded-full overflow-hidden">
+                                    <img class="w-full h-full rounded-full" src="assets/images/author-1.png"
+                                        alt="author">
+                                </div>
+                                <div>
+                                    <h4 class="mb-2 text-xl font-normal text-gray-800">Mr & Mrs. Joseph</h4>
+                                    <p class="text-base font-normal text-gray-500">25 Feb, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="relative bg-white single-testimonial-2 p-6 md:p-[30px] rounded-tr-[16px] rounded-bl-[16px] md:rounded-tr-[30px] md:rounded-bl-[30px]">
+                        <img src="assets/icons/quotes.svg" alt="quotes"
+                            class="absolute bottom-5 right-[90px] hidden md:block quotes">
+                        <div class="testimonial-content">
+                            <ul class="flex items-center gap-2 mb-3 md:mb-[18px]">
+                                <li class="text-base md:text-xl text-[#FFC138]"><i class="fa-solid fa-star"></i></li>
+                                <li class="text-base md:text-xl text-[#FFC138]"><i class="fa-solid fa-star"></i></li>
+                                <li class="text-base md:text-xl text-[#FFC138]"><i class="fa-solid fa-star"></i></li>
+                                <li class="text-base md:text-xl text-[#FFC138]"><i class="fa-solid fa-star"></i></li>
+                                <li class="text-base md:text-xl text-[#FFC138]"><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                            <p class="text-base md:text-xl text-gray-600 font-normal leading-[30px] mb-6">Incredible
+                                wedding
+                                management
+                                service! Their organization and attention to detail made our special day unforgettable.
+                                They planned every aspect and went above and beyond to meet our needs. For stress-free
+                                wedding planning, I definitely
+                                suggest them!</p>
+                            <div class="flex items-center gap-[18px]">
+                                <div class="w-[54px] h-[54px] rounded-full overflow-hidden">
+                                    <img class="w-full h-full rounded-full" src="assets/images/author-1.png"
+                                        alt="author">
+                                </div>
+                                <div>
+                                    <h4 class="mb-2 text-xl font-normal text-gray-800">Mr & Mrs. Joseph</h4>
+                                    <p class="text-base font-normal text-gray-500">25 Feb, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="relative bg-white single-testimonial-2 p-6 md:p-[30px] rounded-tr-[16px] rounded-bl-[16px] md:rounded-tr-[30px] md:rounded-bl-[30px]">
+                        <img src="assets/icons/quotes.svg" alt="quotes"
+                            class="absolute bottom-5 right-[90px] hidden md:block quotes">
+                        <div class="testimonial-content">
+                            <ul class="flex items-center gap-2 mb-3 md:mb-[18px]">
+                                <li class="text-base md:text-xl text-[#FFC138]"><i class="fa-solid fa-star"></i></li>
+                                <li class="text-base md:text-xl text-[#FFC138]"><i class="fa-solid fa-star"></i></li>
+                                <li class="text-base md:text-xl text-[#FFC138]"><i class="fa-solid fa-star"></i></li>
+                                <li class="text-base md:text-xl text-[#FFC138]"><i class="fa-solid fa-star"></i></li>
+                                <li class="text-base md:text-xl text-[#FFC138]"><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                            <p class="text-base md:text-xl text-gray-600 font-normal leading-[30px] mb-6">Incredible
+                                wedding
+                                management
+                                service! Their organization and attention to detail made our special day unforgettable.
+                                They planned every aspect and went above and beyond to meet our needs. For stress-free
+                                wedding planning, I definitely
+                                suggest them!</p>
+                            <div class="flex items-center gap-[18px]">
+                                <div class="w-[54px] h-[54px] rounded-full overflow-hidden">
+                                    <img class="w-full h-full rounded-full" src="assets/images/author-1.png"
+                                        alt="author">
+                                </div>
+                                <div>
+                                    <h4 class="mb-2 text-xl font-normal text-gray-800">Mr & Mrs. Joseph</h4>
+                                    <p class="text-base font-normal text-gray-500">25 Feb, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center gap-4 md:gap-8 pt-14">
+                    <button id="testimonial-prev" class="prev-btn w-[70px] md:w-[100px]">
+                        <img src="assets/icons/prev-arrow-white.svg" alt="prev icon">
+                    </button>
+                    <button id="testimonial-next" class="next-btn w-[70px] md:w-[100px]">
+                        <img src="assets/icons/next-arrow-white.svg" alt="next icon">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial Section End -->
+
+
+
+
+    <!-- Pricing Section Start -->
+    <div id="pricing" class="pricing section-pb">
+        <div class="pricing-area section-inner-main">
+            <div class="container">
+                <div class="max-w-[560px] mx-auto text-center mb-12">
+                    <p class="flex items-center justify-center gap-2 mb-2 text-gray-800">
+                        <span><img src="assets/icons/hero-icon.svg" alt="hero icon"></span>
+                        Pricing
+                        <span><img src="assets/icons/hero-icon.svg" alt="hero icon"></span>
+                    </p>
+                    <h2 class="font-normal text-gray-900 ">Best Package For You</h2>
+                </div>
+                <div class="grid gap-4 pt-8 sm:grid-cols-2 xl:grid-cols-3">
+                    <div class="grid px-6 pt-[50px] pb-10 bg-white single-pricing">
+                        <div class="text-center pricing-header">
+                            <h5 class="mb-4 text-2xl font-normal text-gray-600">Basic Plan</h5>
+                            <p class="text-[32px] font-medium text-gray-800">$8000</p>
+                        </div>
+                        <div class="w-full h-[1px] bg-[#ddd] my-5 md:mt-8 md:mb-10"></div>
+                        <div class="text-center pricing-body">
+                            <ul class="flex flex-col items-center justify-center gap-4 text-center md:gap-6">
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-600 gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Music
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-600 gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Photography &
+                                    Videography
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-600 gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Makeup
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-600 gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Accessories
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-600 gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Wedding Dress
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-400 gap-[6px]">
+                                    <span><img src="assets/icons/cross.svg" alt="cross"></span>Flower
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-400 gap-[6px]">
+                                    <span><img src="assets/icons/cross.svg" alt="cross"></span>Wedding Cake
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-400 gap-[6px]">
+                                    <span><img src="assets/icons/cross.svg" alt="cross"></span>Food
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-400 gap-[6px]">
+                                    <span><img src="assets/icons/cross.svg" alt="cross"></span>Convension Hall
+                                </li>
+                            </ul>
+                            <a href="#"
+                                class="inline-block px-8 py-4 mx-auto mt-12 text-base text-center transition duration-150 border text-medium text-main-900 border-main-900 hover:bg-main-900 hover:text-white">Get
+                                Started</a>
+                        </div>
+                    </div>
+                    <div class="grid px-6 mt-8 sm:mt-0 pt-[50px] pb-10 bg-blue-900 single-pricing relative">
+                        <p
+                            class="absolute left-1/2 -top-7 -translate-x-1/2 flex justify-center items-center gap-2 text-white text-lg sm:text-xl md:text-2xl bg-[#FF9E2C] px-6 py-3 rounded-md">
+                            <span><img src="assets/icons/popular.svg" alt="popular"></span>Popular
+                        </p>
+                        <div class="text-center pricing-header">
+                            <h5 class="mb-4 text-2xl font-normal text-white">Standard Plan</h5>
+                            <p class="text-[32px] font-medium text-white">$4000</p>
+                        </div>
+                        <div class="w-full h-[1px] bg-[#ddd] my-5 md:mt-8 md:mb-10"></div>
+                        <div class="text-center pricing-body">
+                            <ul class="flex flex-col items-center justify-center gap-4 text-center md:gap-6">
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-white gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Music
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-white gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Photography &
+                                    Videography
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-white gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Makeup
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-white gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Accessories
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-white gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Wedding Dress
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-white gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Flower
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-white gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Wedding Cake
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-300 gap-[6px]">
+                                    <span><img src="assets/icons/cross.svg" alt="cross"></span>Food
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-300 gap-[6px]">
+                                    <span><img src="assets/icons/cross.svg" alt="cross"></span>Convension Hall
+                                </li>
+                            </ul>
+                            <a href="#"
+                                class="inline-block px-8 py-4 mx-auto mt-12 text-base text-center transition duration-150 bg-white border border-white text-main-900 text-medium">Get
+                                Started</a>
+                        </div>
+                    </div>
+                    <div class="grid px-6 pt-[50px] pb-10 bg-white single-pricing">
+                        <div class="text-center pricing-header">
+                            <h5 class="mb-4 text-2xl font-normal text-gray-600">Premium Plan</h5>
+                            <p class="text-[32px] font-medium text-gray-800">$12000</p>
+                        </div>
+                        <div class="w-full h-[1px] bg-[#ddd] my-5 md:mt-8 md:mb-10"></div>
+                        <div class="text-center pricing-body">
+                            <ul class="flex flex-col items-center justify-center gap-4 text-center md:gap-6">
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-600 gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Music
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-600 gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Photography &
+                                    Videography
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-600 gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Makeup
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-600 gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Accessories
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-600 gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Wedding Dress
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-600 gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Flower
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-600 gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Wedding Cake
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-600 gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Food
+                                </li>
+                                <li class="flex items-center text-base sm:text-lg md:text-xl text-gray-600 gap-[6px]">
+                                    <span><img src="assets/icons/tick.svg" alt="tick"></span>Convension Hall
+                                </li>
+                            </ul>
+                            <a href="#"
+                                class="inline-block px-8 py-4 mx-auto mt-12 text-base text-center transition duration-150 border text-medium text-main-900 border-main-900 hover:bg-main-900 hover:text-white">Get
+                                Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pricing Section End -->
+
+
+
+
+    <!-- Portfolio Section Start -->
+    <div id="portfolio" class="portfolio section-pb">
+        <div class="portfolio-area">
+            <div class="container">
+                <div class="max-w-[560px] mx-auto text-center mb-12">
+                    <p class="flex items-center justify-center gap-2 mb-2 text-gray-800">
+                        <span><img src="assets/icons/hero-icon.svg" alt="hero icon"></span>
+                        Our Projects
+                        <span><img src="assets/icons/hero-icon.svg" alt="hero icon"></span>
+                    </p>
+                    <h2 class="font-normal text-gray-900 ">Take a Look at Our <br> Portfolio</h2>
+                </div>
+                <div class="grid gap-4 md:gap-[30px] pt-8 sm:grid-cols-2 xl:grid-cols-3">
+                    <div>
+                        <div class="single-project  mb-4 md:mb-[30px] xl:mb-[50px]">
+                            <div class="relative block h-[340px] overflow-hidden group">
+                                <a href="#" class="block h-full overflow-hidfullject-img">
+                                    <img class="object-cover w-full h-full" src="assets/images/project-1.png"
+                                        alt="project img">
+                                </a>
+                                <div
+                                    class="absolute project-content px-6 py-[18px] w-[80%] left-1/2 -translate-x-1/2 -bottom-36 group-hover:bottom-4 transition-all duration-150 bg-white text-center project-shadow">
+                                    <a href="#" class="inline-block mb-2 text-lg text-gray-800">Eternal Bliss
+                                        Weddings</a>
+                                    <p class="text-base font-normal text-gray-500">Eternal Bliss Weddings is your
+                                        premier destination for crafting.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-project">
+                            <div class="relative block h-[340px] overflow-hidden group">
+                                <a href="#" class="block h-full overflow-hidfullject-img">
+                                    <img class="object-cover w-full h-full" src="assets/images/project-1.png"
+                                        alt="project img">
+                                </a>
+                                <div
+                                    class="absolute project-content px-6 py-[18px] w-[80%] left-1/2 -translate-x-1/2 -bottom-36 group-hover:bottom-4 transition-all duration-150 bg-white text-center project-shadow">
+                                    <a href="#" class="inline-block mb-2 text-lg text-gray-800">Eternal Bliss
+                                        Weddings</a>
+                                    <p class="text-base font-normal text-gray-500">Eternal Bliss Weddings is your
+                                        premier destination for crafting.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:mt-[50px]">
+                        <div class="single-project mb-4 md:mb-[30px] xl:mb-[50px]">
+                            <div class="relative block h-[340px] overflow-hidden group">
+                                <a href="#" class="block h-full project-img">
+                                    <img class="object-cover w-full h-full" src="assets/images/project-3.png"
+                                        alt="project img">
+                                </a>
+                                <div
+                                    class="absolute project-content px-6 py-[18px] w-[80%] left-1/2 -translate-x-1/2 -bottom-36 group-hover:bottom-4 transition-all duration-150 bg-white text-center project-shadow">
+                                    <a href="#" class="inline-block mb-2 text-lg text-gray-800">Eternal Bliss
+                                        Weddings</a>
+                                    <p class="text-base font-normal text-gray-500">Eternal Bliss Weddings is your
+                                        premier destination for crafting.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-project">
+                            <div class="relative block h-[340px] overflow-hidden group">
+                                <a href="#" class="block h-full project-img">
+                                    <img class="object-cover w-full h-full" src="assets/images/project-3.png"
+                                        alt="project img">
+                                </a>
+                                <div
+                                    class="absolute project-content px-6 py-[18px] w-[80%] left-1/2 -translate-x-1/2 -bottom-36 group-hover:bottom-4 transition-all duration-150 bg-white text-center project-shadow">
+                                    <a href="#" class="inline-block mb-2 text-lg text-gray-800">Eternal Bliss
+                                        Weddings</a>
+                                    <p class="text-base font-normal text-gray-500">Eternal Bliss Weddings is your
+                                        premier destination for crafting.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:mt-[100px]">
+                        <div class="single-project mb-4 md:mb-[30px] xl:mb-[50px]">
+                            <div class="relative block h-[340px] overflow-hidden group">
+                                <a href="#" class="block h-full project-img">
+                                    <img class="object-cover w-full h-full" src="assets/images/project-2.png"
+                                        alt="project img">
+                                </a>
+                                <div
+                                    class="absolute project-content px-6 py-[18px] w-[80%] left-1/2 -translate-x-1/2 -bottom-36 group-hover:bottom-4 transition-all duration-150 bg-white text-center project-shadow">
+                                    <a href="#" class="inline-block mb-2 text-lg text-gray-800">Eternal Bliss
+                                        Weddings</a>
+                                    <p class="text-base font-normal text-gray-500">Eternal Bliss Weddings is your
+                                        premier destination for crafting.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-project">
+                            <div class="relative block h-[340px] overflow-hidden group">
+                                <a href="#" class="block h-full project-img">
+                                    <img class="object-cover w-full h-full" src="assets/images/project-2.png"
+                                        alt="project img">
+                                </a>
+                                <div
+                                    class="absolute project-content px-6 py-[18px] w-[80%] left-1/2 -translate-x-1/2 -bottom-36 group-hover:bottom-4 transition-all duration-150 bg-white text-center project-shadow">
+                                    <a href="#" class="inline-block mb-2 text-lg text-gray-800">Eternal Bliss
+                                        Weddings</a>
+                                    <p class="text-base font-normal text-gray-500">Eternal Bliss Weddings is your
+                                        premier destination for crafting.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Section End -->
+
+
+
+    <!-- Blog Section Start -->
+    <div id="blog" class="blog">
+        <div class="pt-0 blog-area section-inner-main-pt">
+            <div class="container">
+                <div class="flex flex-col items-center justify-between gap-4 mb-12 md:flex-row">
+                    <div class="max-w-[560px]">
+                        <p class="flex items-center gap-2 mb-2 text-gray-800">
+                            <span><img src="assets/icons/hero-icon.svg" alt="hero icon"></span>
+                            Our Blogs
+                            <span><img src="assets/icons/hero-icon.svg" alt="hero icon"></span>
+                        </p>
+                        <h2 class="font-normal text-gray-900 ">Recent Wedding News</h2>
+                    </div>
+                    <div class="flex items-center justify-center gap-8">
+                        <button id="blog-prev" class="prev-btn w-[70px] md:w-[100px]">
+                            <img src="assets/icons/prev-arrow.svg" alt="prev icon">
+                        </button>
+                        <button id="blog-next" class="next-btn w-[70px] md:w-[100px]">
+                            <img src="assets/icons/next-arrow.svg" alt="next icon">
+                        </button>
+                    </div>
+                </div>
+                <div class="blogs-wrapper">
+                    <div class="mb-4 single-blog group">
+                        <div class="relative block overflow-hidden">
+                            <a href="blog-details.html" class="w-full h-[300px] block overflow-hidden">
+                                <img class="object-cover w-full h-full transition duration-150 group-hover:scale-110"
+                                    src="assets/images/blog-1.png" alt="blog images">
+                            </a>
+                        </div>
+                        <div class="py-4 blog-content">
+                            <div class="flex items-center gap-[18px] mb-3">
+                                <div class="flex items-center gap-2 text-base font-normal text-gray-500">
+                                    <span><img src="assets/icons/date.svg" alt="calander"></span>
+                                    25 Feb, 2024
+                                </div>
+                                <div class="flex items-center gap-2 text-base font-normal text-gray-500">
+                                    <span><img src="assets/icons/author.svg" alt="author"></span>
+                                    Michael J. Norton
+                                </div>
+                            </div>
+                            <a href="blog-details.html"
+                                class="inline-block mb-3 text-2xl font-normal text-gray-800 font-sail">Your
+                                Ultimate Guide
+                                to Stress-Free Wedding Planning...</a>
+                        </div>
+                    </div>
+                    <div class="mb-4 single-blog group">
+                        <div class="relative block overflow-hidden">
+                            <a href="blog-details.html" class="w-full h-[300px] block overflow-hidden">
+                                <img class="object-cover w-full h-full transition duration-150 group-hover:scale-110"
+                                    src="assets/images/blog-2.png" alt="blog images">
+                            </a>
+                        </div>
+                        <div class="py-4 blog-content">
+                            <div class="flex items-center gap-[18px] mb-3">
+                                <div class="flex items-center gap-2 text-base font-normal text-gray-500">
+                                    <span><img src="assets/icons/date.svg" alt="calander"></span>
+                                    25 Feb, 2024
+                                </div>
+                                <div class="flex items-center gap-2 text-base font-normal text-gray-500">
+                                    <span><img src="assets/icons/author.svg" alt="author"></span>
+                                    Michael J. Norton
+                                </div>
+                            </div>
+                            <a href="blog-details.html"
+                                class="inline-block mb-3 text-2xl font-normal text-gray-800 font-sail">Your
+                                Ultimate Guide
+                                to Stress-Free Wedding Planning...</a>
+                        </div>
+                    </div>
+                    <div class="mb-4 single-blog group">
+                        <div class="relative block overflow-hidden">
+                            <a href="blog-details.html" class="w-full h-[300px] block overflow-hidden">
+                                <img class="object-cover w-full h-full transition duration-150 group-hover:scale-110"
+                                    src="assets/images/blog-3.png" alt="blog images">
+                            </a>
+                        </div>
+                        <div class="py-4 blog-content">
+                            <div class="flex items-center gap-[18px] mb-3">
+                                <div class="flex items-center gap-2 text-base font-normal text-gray-500">
+                                    <span><img src="assets/icons/date.svg" alt="calander"></span>
+                                    25 Feb, 2024
+                                </div>
+                                <div class="flex items-center gap-2 text-base font-normal text-gray-500">
+                                    <span><img src="assets/icons/author.svg" alt="author"></span>
+                                    Michael J. Norton
+                                </div>
+                            </div>
+                            <a href="blog-details.html"
+                                class="inline-block mb-3 text-2xl font-normal text-gray-800 font-sail">Your
+                                Ultimate Guide
+                                to Stress-Free Wedding Planning...</a>
+                        </div>
+                    </div>
+                    <div class="mb-4 single-blog group">
+                        <div class="relative block overflow-hidden">
+                            <a href="blog-details.html" class="w-full h-[300px] block overflow-hidden">
+                                <img class="object-cover w-full h-full transition duration-150 group-hover:scale-110"
+                                    src="assets/images/blog-1.png" alt="blog images">
+                            </a>
+                        </div>
+                        <div class="py-4 blog-content">
+                            <div class="flex items-center gap-[18px] mb-3">
+                                <div class="flex items-center gap-2 text-base font-normal text-gray-500">
+                                    <span><img src="assets/icons/date.svg" alt="calander"></span>
+                                    25 Feb, 2024
+                                </div>
+                                <div class="flex items-center gap-2 text-base font-normal text-gray-500">
+                                    <span><img src="assets/icons/author.svg" alt="author"></span>
+                                    Michael J. Norton
+                                </div>
+                            </div>
+                            <a href="blog-details.html"
+                                class="inline-block mb-3 text-2xl font-normal text-gray-800 font-sail">Your
+                                Ultimate Guide
+                                to Stress-Free Wedding Planning...</a>
+                        </div>
+                    </div>
+                    <div class="mb-4 single-blog group">
+                        <div class="relative block overflow-hidden">
+                            <a href="blog-details.html" class="w-full h-[300px] block overflow-hidden">
+                                <img class="object-cover w-full h-full transition duration-150 group-hover:scale-110"
+                                    src="assets/images/blog-2.png" alt="blog images">
+                            </a>
+                        </div>
+                        <div class="py-4 blog-content">
+                            <div class="flex items-center gap-[18px] mb-3">
+                                <div class="flex items-center gap-2 text-base font-normal text-gray-500">
+                                    <span><img src="assets/icons/date.svg" alt="calander"></span>
+                                    25 Feb, 2024
+                                </div>
+                                <div class="flex items-center gap-2 text-base font-normal text-gray-500">
+                                    <span><img src="assets/icons/author.svg" alt="author"></span>
+                                    Michael J. Norton
+                                </div>
+                            </div>
+                            <a href="blog-details.html"
+                                class="inline-block mb-3 text-2xl font-normal text-gray-800 font-sail">Your
+                                Ultimate Guide
+                                to Stress-Free Wedding Planning...</a>
+                        </div>
+                    </div>
+                    <div class="mb-4 single-blog group">
+                        <div class="relative block overflow-hidden">
+                            <a href="blog-details.html" class="w-full h-[300px] block overflow-hidden">
+                                <img class="object-cover w-full h-full transition duration-150 group-hover:scale-110"
+                                    src="assets/images/blog-3.png" alt="blog images">
+                            </a>
+                        </div>
+                        <div class="py-4 blog-content">
+                            <div class="flex items-center gap-[18px] mb-3">
+                                <div class="flex items-center gap-2 text-base font-normal text-gray-500">
+                                    <span><img src="assets/icons/date.svg" alt="calander"></span>
+                                    25 Feb, 2024
+                                </div>
+                                <div class="flex items-center gap-2 text-base font-normal text-gray-500">
+                                    <span><img src="assets/icons/author.svg" alt="author"></span>
+                                    Michael J. Norton
+                                </div>
+                            </div>
+                            <a href="blog-details.html"
+                                class="inline-block mb-3 text-2xl font-normal text-gray-800 font-sail">Your
+                                Ultimate Guide
+                                to Stress-Free Wedding Planning...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog Section End -->
+
+
+
+
+
+    <!-- Gallary Section Start -->
+    <div id="gallary" class="gallary">
+        <div class="mb-0 gallary-area section-inner-main">
+            <div class="max-w-[560px] mx-auto text-center mb-12">
+                <h2 class="font-normal text-gray-900 ">Make your story last forever</h2>
+            </div>
+            <div class="gallary-wrapper">
+                <div>
+                    <a href="https://www.instagram.com/" target="_blank" class="w-full h-[264px] overflow-hidden">
+                        <img class="w-full h-full" src="assets/images/gallary-1.png" alt="gallary">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/" target="_blank" class="w-full h-[264px] overflow-hidden">
+                        <img class="w-full h-full" src="assets/images/gallary-2.png" alt="gallary">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/" target="_blank" class="w-full h-[264px] overflow-hidden">
+                        <img class="w-full h-full" src="assets/images/gallary-3.png" alt="gallary">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/" target="_blank" class="w-full h-[264px] overflow-hidden">
+                        <img class="w-full h-full" src="assets/images/gallary-4.png" alt="gallary">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/" target="_blank" class="w-full h-[264px] overflow-hidden">
+                        <img class="w-full h-full" src="assets/images/gallary-5.png" alt="gallary">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/" target="_blank" class="w-full h-[264px] overflow-hidden">
+                        <img class="w-full h-full" src="assets/images/gallary-1.png" alt="gallary">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/" target="_blank" class="w-full h-[264px] overflow-hidden">
+                        <img class="w-full h-full" src="assets/images/gallary-2.png" alt="gallary">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/" target="_blank" class="w-full h-[264px] overflow-hidden">
+                        <img class="w-full h-full" src="assets/images/gallary-3.png" alt="gallary">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/" target="_blank" class="w-full h-[264px] overflow-hidden">
+                        <img class="w-full h-full" src="assets/images/gallary-4.png" alt="gallary">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/" target="_blank" class="w-full h-[264px] overflow-hidden">
+                        <img class="w-full h-full" src="assets/images/gallary-5.png" alt="gallary">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Gallary Section End -->
+
+
+
+
+    <!-- Footer Section Start -->
+    <footer id="footer-section" class="footer-section">
+        <div class="footer-section-area bg-[#181A29] relative overflow-hidden">
+            <img src="assets/icons/footer-left.svg" alt="footer left" class="absolute left-0 z-10 bottom-20">
+            <img src="assets/icons/footer-right.svg" alt="footer left" class="absolute top-0 right-0 z-10">
+            <div class="container">
+                <div class="flex flex-col justify-center items-center gap-[30px] w-full mx-auto py-20 relative z-30">
+                    <a href="index.html" class="footer-logo">
+                        <img src="assets/icons/logo-white.svg" alt="logo">
+                    </a>
+                    <ul class="flex justify-center items-center gap-[18px] flex-wrap">
+                        <li>
+                            <a href="index.html" class="text-base font-normal text-gray-200">Home</a>
+                        </li>
+                        <li>
+                            <a href="services.html" class="text-base font-normal text-gray-200">Our Services</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html" class="text-base font-normal text-gray-200">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="product.html " class="text-base font-normal text-gray-200">Accessories</a>
+                        </li>
+                        <li>
+                            <a href="book-appoinment.html" class="text-base font-normal text-gray-200">Book
+                                Appoinmnet</a>
+                        </li>
+                    </ul>
+                    <ul class="flex gap-6 justifiy-center-items-center">
+                        <li>
+                            <a href="" target="_blank" class="text-xl text-gray-200"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="text-xl text-gray-200"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="text-xl text-gray-200"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="text-xl text-gray-200"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full h-[1px] bg-[#4d4d4f]"></div>
+            <div class="flex justify-center py-6">
+                <p class="text-base font-normal text-white">© All rights reserved Copyrights 2024</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!-- Slick Slider -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

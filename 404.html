@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll:smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarryMate | 404 -Page Not Found</title>
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <!-- Jost Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Sail Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <header class="bg-main-300 py-4 lg:py-0">
+        <div class="container">
+            <div class="lg:flex items-center justify-between">
+                <div class="flex justify-between w-full lg:w-auto">
+                    <div>
+                        <a href="index.html"><img src="assets/icons/logo.svg" alt="logo"></a>
+                    </div>
+                    <div class="flex items-center gap-5">
+                        <div class="flex lg:hidden items-center justify-end space-x-5">
+                            <a href="cart.html" class="relative">
+                                <img src="assets/icons/cart.svg" alt="cart icon">
+                                <span
+                                    class="w-[10px] h-[10px] rounded-full bg-[#DC2B2B] text-[8px] text-white flex justify-center items-center absolute top-1 right-0">
+                                    2</span>
+                            </a>
+                        </div>
+                        <button id="navbar-toggler" class="navbar-toggler lg:hidden open-sidebar-btn"
+                            type="button"><span></span><span></span><span></span></button>
+                    </div>
+                </div>
+                <div class="lg:flex flex-col lg:flex-row lg:items-center hidden lg:w-7/12 lg:justify-between"
+                    id="navbarContent">
+                    <nav class="header-nav">
+                        <ul class="flex flex-col lg:flex-row lg:items-center lg:gap-4 navbar-items">
+                            <li class="nav-item">
+                                <div class="block group tailwind-dropdown relative">
+                                    <button
+                                        class="flex items-center w-full justify-between nav-sub-menu-btn lg:py-7 nav-link relative border-b lg:border-b-0 border-gray-200">
+                                        <span
+                                            class="relative text-[#3E4767] text-base font-jost font-normal nav-link block py-3 lg:py-0 ">Home</span>
+                                        <span>
+                                            <svg class="w-4 h-4 transition duration-150 ease-in-out transform fill-current group-hover:-rotate-180"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                <path
+                                                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                            </svg>
+                                        </span>
+                                        <span class="absolute left-0 w-full bottom-[15px] fancy-border">
+                                            <img src="assets/icons/fancy-border.svg" alt="fancy border">
+                                        </span>
+                                    </button>
+                                    <ul id="nav-level-content-1"
+                                        class="hidden transition duration-150 ease-in-out origin-top transform scale-0 bg-white nav-level-content-2 lg:block lg:absolute group-hover:scale-100 min-w-44 z-50 border-t-4 border-blue-900">
+                                        <li>
+                                            <a href="index.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Home
+                                                One</a>
+                                        </li>
+                                        <li>
+                                            <a href="index-2.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Home
+                                                Two</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="services.html"
+                                    class="relative text-[#3E4767] text-base font-jost font-normal nav-link block py-3 lg:py-0 border-b lg:border-b-0 border-gray-200">Our
+                                    Services
+                                    <span class="absolute left-0 w-full -bottom-3 fancy-border">
+                                        <img src="assets/icons/fancy-border.svg" alt="fancy border">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="portfolio.html"
+                                    class="relative text-[#3E4767] text-base font-jost font-normal nav-link block py-3 lg:py-0 border-b lg:border-b-0 border-gray-200">Portfolio
+                                    <span class="absolute left-0 w-full -bottom-3 fancy-border">
+                                        <img src="assets/icons/fancy-border.svg" alt="fancy border">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="product.html"
+                                    class="relative text-[#3E4767] text-base font-jost font-normal nav-link block py-3 lg:py-0 border-b lg:border-b-0 border-gray-200">Accessories
+                                    <span class="absolute left-0 w-full -bottom-3 fancy-border">
+                                        <img src="assets/icons/fancy-border.svg" alt="fancy border">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="block group tailwind-dropdown relative">
+                                    <button
+                                        class="flex items-center w-full justify-between nav-sub-menu-btn lg:py-7 nav-link relative">
+                                        <span
+                                            class="relative text-[#3E4767] text-base font-jost font-normal nav-link block py-3 lg:py-0 ">Pages</span>
+                                        <span>
+                                            <svg class="w-4 h-4 transition duration-150 ease-in-out transform fill-current group-hover:-rotate-180"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                <path
+                                                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                            </svg>
+                                        </span>
+                                        <span class="absolute left-0 w-full bottom-[15px] fancy-border">
+                                            <img src="assets/icons/fancy-border.svg" alt="fancy border">
+                                        </span>
+                                    </button>
+                                    <ul id="nav-level-content-2"
+                                        class="hidden transition duration-150 ease-in-out origin-top transform scale-0 bg-white nav-level-content-2 lg:block lg:absolute group-hover:scale-100 min-w-44 z-50 border-t-4 border-blue-900">
+                                        <li>
+                                            <a href="blogs.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="pricing.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Pricing</a>
+                                        </li>
+                                        <li>
+                                            <a href="teams.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Teams</a>
+                                        </li>
+                                        <li>
+                                            <a href="testimonials.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Testimonials</a>
+                                        </li>
+                                        <li>
+                                            <a href="book-appoinment.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Book
+                                                Appoinment</a>
+                                        </li>
+                                        <li class="relative px-3 py-1 rounded-sm hover:bg-gray-100">
+                                            <button
+                                                class="flex items-center w-full text-left outline-none focus:outline-none nav-sub-menu-btn">
+                                                <span class="flex-1 pr-1">Sub Menu</span>
+                                                <span class="mr-auto">
+                                                    <svg class="w-4 h-4 transition duration-150 ease-in-out fill-current"
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                        <path
+                                                            d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                            <ul id="nav-level-content-3"
+                                                class="top-0 le right-0 hidden transition duration-150 ease-in-out origin-top-left bg-white md:block lg:absolute min-w-44 z-50 border-t-4 border-blue-900 nav-level-content-3">
+                                                <li>
+                                                    <a href="#"
+                                                        class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Demo
+                                                        Sub
+                                                        Menu</a>
+                                                </li>
+                                                <li class="relative px-3 py-1 rounded-sm hover:bg-gray-100">
+                                                    <button
+                                                        class="flex items-center w-full text-left outline-none focus:outline-none nav-sub-menu-btn">
+                                                        <span class="flex-1 pr-1">Sub Menu</span>
+                                                        <span class="mr-auto">
+                                                            <svg class="w-4 h-4 transition duration-150 ease-in-out fill-current"
+                                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                                <path
+                                                                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                    <ul id="nav-level-content-4"
+                                                        class="top-0 right-0 hidden transition duration-150 ease-in-out origin-top-left bg-white md:block lg:absolute min-w-40 z-50 border-t-4 border-blue-900 nav-level-content-4">
+                                                        <li>
+                                                            <a href="#"
+                                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Demo
+                                                                Sub
+                                                                Menu</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"
+                                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Demo
+                                                                Sub
+                                                                Menu</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Demo
+                                                        Sub
+                                                        Menu</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Demo
+                                                        Sub
+                                                        Menu</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="signin.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Sign
+                                                In</a>
+                                        </li>
+                                        <li>
+                                            <a href="signup.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Sign
+                                                Up</a>
+                                        </li>
+                                        <li>
+                                            <a href="404.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Not
+                                                Found</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="hidden lg:flex items-center justify-end gap-5">
+                        <div class="relative flex items-center">
+                            <div class="hidden absolute top-1/2 -translate-y-1/2 right-10 header-search-input">
+                                <input type="text" name="search" id="search"
+                                    class="block min-w-80 bg-transparent px-5 py-3 rounded-md border-1 border-main-600 text-gray-600 ring-1 ring-inset ring-main-600 focus:ring-1  placeholder:text-gray-600 focus:ring-main-900 placeholder:text-base outline-none"
+                                    placeholder="Search here...">
+                            </div>
+                            <button class="header-search-btn text-[20px] text-main-900 pt-1"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                        <a href="cart.html" class="relative">
+                            <img src="assets/icons/cart.svg" alt="cart icon">
+                            <span
+                                class="w-[10px] h-[10px] rounded-full bg-[#DC2B2B] text-[8px] text-white flex justify-center items-center absolute top-1 right-0">
+                                2</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+
+
+    <!-- 404 Section Start -->
+    <div id="error" class="error section">
+        <div class="error-area">
+            <div class="container">
+                <div class="grid justify-center mx-auto sm:w-3/4">
+                    <div class="mb-10 sm:mb-[60px]">
+                        <img src="assets/images/404.png" alt="404 image">
+                    </div>
+                    <div class="grid justify-center text-center">
+                        <h2
+                            class="text-3xl lg:text-[38px]'' text-[#1E2245] font-jost font-semibold mb-[30px] capitalize">
+                            Oops! Page
+                            Not Found</h2>
+                        <div>
+                            <a href="index.html" class="inline-block px-8 py-4 text-white bg-blue-900">Back To Home</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 404 Section End -->
+
+
+
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!-- Slick Slider -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

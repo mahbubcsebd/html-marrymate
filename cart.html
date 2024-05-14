@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll:smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarryMate | Cart</title>
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <!-- Jost Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Sail Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <header class="bg-main-300 py-4 lg:py-0">
+        <div class="container">
+            <div class="lg:flex items-center justify-between">
+                <div class="flex justify-between w-full lg:w-auto">
+                    <div>
+                        <a href="index.html"><img src="assets/icons/logo.svg" alt="logo"></a>
+                    </div>
+                    <div class="flex items-center gap-5">
+                        <div class="flex lg:hidden items-center justify-end space-x-5">
+                            <a href="cart.html" class="relative">
+                                <img src="assets/icons/cart.svg" alt="cart icon">
+                                <span
+                                    class="w-[10px] h-[10px] rounded-full bg-[#DC2B2B] text-[8px] text-white flex justify-center items-center absolute top-1 right-0">
+                                    2</span>
+                            </a>
+                        </div>
+                        <button id="navbar-toggler" class="navbar-toggler lg:hidden open-sidebar-btn"
+                            type="button"><span></span><span></span><span></span></button>
+                    </div>
+                </div>
+                <div class="lg:flex flex-col lg:flex-row lg:items-center hidden lg:w-7/12 lg:justify-between"
+                    id="navbarContent">
+                    <nav class="header-nav">
+                        <ul class="flex flex-col lg:flex-row lg:items-center lg:gap-4 navbar-items">
+                            <li class="nav-item">
+                                <div class="block group tailwind-dropdown relative">
+                                    <button
+                                        class="flex items-center w-full justify-between nav-sub-menu-btn lg:py-7 nav-link relative border-b lg:border-b-0 border-gray-200">
+                                        <span
+                                            class="relative text-[#3E4767] text-base font-jost font-normal nav-link block py-3 lg:py-0 ">Home</span>
+                                        <span>
+                                            <svg class="w-4 h-4 transition duration-150 ease-in-out transform fill-current group-hover:-rotate-180"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                <path
+                                                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                            </svg>
+                                        </span>
+                                        <span class="absolute left-0 w-full bottom-[15px] fancy-border">
+                                            <img src="assets/icons/fancy-border.svg" alt="fancy border">
+                                        </span>
+                                    </button>
+                                    <ul id="nav-level-content-1"
+                                        class="hidden transition duration-150 ease-in-out origin-top transform scale-0 bg-white nav-level-content-2 lg:block lg:absolute group-hover:scale-100 min-w-44 z-50 border-t-4 border-blue-900">
+                                        <li>
+                                            <a href="index.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Home
+                                                One</a>
+                                        </li>
+                                        <li>
+                                            <a href="index-2.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Home
+                                                Two</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="services.html"
+                                    class="relative text-[#3E4767] text-base font-jost font-normal nav-link block py-3 lg:py-0 border-b lg:border-b-0 border-gray-200">Our
+                                    Services
+                                    <span class="absolute left-0 w-full -bottom-3 fancy-border">
+                                        <img src="assets/icons/fancy-border.svg" alt="fancy border">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="portfolio.html"
+                                    class="relative text-[#3E4767] text-base font-jost font-normal nav-link block py-3 lg:py-0 border-b lg:border-b-0 border-gray-200">Portfolio
+                                    <span class="absolute left-0 w-full -bottom-3 fancy-border">
+                                        <img src="assets/icons/fancy-border.svg" alt="fancy border">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="product.html"
+                                    class="relative text-[#3E4767] text-base font-jost font-normal nav-link block py-3 lg:py-0 border-b lg:border-b-0 border-gray-200">Accessories
+                                    <span class="absolute left-0 w-full -bottom-3 fancy-border">
+                                        <img src="assets/icons/fancy-border.svg" alt="fancy border">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="block group tailwind-dropdown relative">
+                                    <button
+                                        class="flex items-center w-full justify-between nav-sub-menu-btn lg:py-7 nav-link relative">
+                                        <span
+                                            class="relative text-[#3E4767] text-base font-jost font-normal nav-link block py-3 lg:py-0 ">Pages</span>
+                                        <span>
+                                            <svg class="w-4 h-4 transition duration-150 ease-in-out transform fill-current group-hover:-rotate-180"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                <path
+                                                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                            </svg>
+                                        </span>
+                                        <span class="absolute left-0 w-full bottom-[15px] fancy-border">
+                                            <img src="assets/icons/fancy-border.svg" alt="fancy border">
+                                        </span>
+                                    </button>
+                                    <ul id="nav-level-content-2"
+                                        class="hidden transition duration-150 ease-in-out origin-top transform scale-0 bg-white nav-level-content-2 lg:block lg:absolute group-hover:scale-100 min-w-44 z-50 border-t-4 border-blue-900">
+                                        <li>
+                                            <a href="blogs.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="pricing.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Pricing</a>
+                                        </li>
+                                        <li>
+                                            <a href="teams.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Teams</a>
+                                        </li>
+                                        <li>
+                                            <a href="testimonials.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Testimonials</a>
+                                        </li>
+                                        <li>
+                                            <a href="book-appoinment.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Book
+                                                Appoinment</a>
+                                        </li>
+                                        <li class="relative px-3 py-1 rounded-sm hover:bg-gray-100">
+                                            <button
+                                                class="flex items-center w-full text-left outline-none focus:outline-none nav-sub-menu-btn">
+                                                <span class="flex-1 pr-1">Sub Menu</span>
+                                                <span class="mr-auto">
+                                                    <svg class="w-4 h-4 transition duration-150 ease-in-out fill-current"
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                        <path
+                                                            d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                            <ul id="nav-level-content-3"
+                                                class="top-0 le right-0 hidden transition duration-150 ease-in-out origin-top-left bg-white md:block lg:absolute min-w-44 z-50 border-t-4 border-blue-900 nav-level-content-3">
+                                                <li>
+                                                    <a href="#"
+                                                        class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Demo
+                                                        Sub
+                                                        Menu</a>
+                                                </li>
+                                                <li class="relative px-3 py-1 rounded-sm hover:bg-gray-100">
+                                                    <button
+                                                        class="flex items-center w-full text-left outline-none focus:outline-none nav-sub-menu-btn">
+                                                        <span class="flex-1 pr-1">Sub Menu</span>
+                                                        <span class="mr-auto">
+                                                            <svg class="w-4 h-4 transition duration-150 ease-in-out fill-current"
+                                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                                <path
+                                                                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                    <ul id="nav-level-content-4"
+                                                        class="top-0 right-0 hidden transition duration-150 ease-in-out origin-top-left bg-white md:block lg:absolute min-w-40 z-50 border-t-4 border-blue-900 nav-level-content-4">
+                                                        <li>
+                                                            <a href="#"
+                                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Demo
+                                                                Sub
+                                                                Menu</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"
+                                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Demo
+                                                                Sub
+                                                                Menu</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Demo
+                                                        Sub
+                                                        Menu</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Demo
+                                                        Sub
+                                                        Menu</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="signin.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Sign
+                                                In</a>
+                                        </li>
+                                        <li>
+                                            <a href="signup.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Sign
+                                                Up</a>
+                                        </li>
+                                        <li>
+                                            <a href="404.html"
+                                                class="px-3 py-1 hover:bg-blue-900 hover:text-white block transition duration-150">Not
+                                                Found</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="hidden lg:flex items-center justify-end gap-5">
+                        <div class="relative flex items-center">
+                            <div class="hidden absolute top-1/2 -translate-y-1/2 right-10 header-search-input">
+                                <input type="text" name="search" id="search"
+                                    class="block min-w-80 bg-transparent px-5 py-3 rounded-md border-1 border-main-600 text-gray-600 ring-1 ring-inset ring-main-600 focus:ring-1  placeholder:text-gray-600 focus:ring-main-900 placeholder:text-base outline-none"
+                                    placeholder="Search here...">
+                            </div>
+                            <button class="header-search-btn text-[20px] text-main-900 pt-1"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                        <a href="cart.html" class="relative">
+                            <img src="assets/icons/cart.svg" alt="cart icon">
+                            <span
+                                class="w-[10px] h-[10px] rounded-full bg-[#DC2B2B] text-[8px] text-white flex justify-center items-center absolute top-1 right-0">
+                                2</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+
+
+    <!-- Page Banner Section Start -->
+    <div id="page-banner" class="page-banner mb-8">
+        <div class="relative page-banner-area bg-main-800">
+            <div class="hidden md:block">
+                <img src="assets/icons/banner-1.svg" alt="banner icon" class="absolute bottom-0 z-10 left-4">
+                <img src="assets/icons/banner-2.svg" alt="banner icon" class="absolute bottom-0 z-10 right-10">
+            </div>
+            <div class="container">
+                <div class="page-banner-content h-[300px] md:h-[320px] flex justify-center items-center relative z-20">
+                    <h2 class="text-[40px] text-white font-normal">Cart</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Banner Section End -->
+
+
+
+    <!-- Cart Section Start -->
+    <div id="cart" class="cart section-pb">
+        <div class="cart-area">
+            <div class="container">
+                <!-- Table Start -->
+                <div class="overflow-x-auto mb-10">
+                    <div class="min-w-[900px]">
+                        <table class="min-w-full">
+                            <thead class="bg-main-400 border-b">
+                                <tr>
+                                    <th scope="col"
+                                        class="text-lg md:text-[20px] text-left font-medium text-gray-600 px-5 py-4 md:px-[30px] md:py-[26px]">
+                                        Product
+                                    </th>
+                                    <th scope="col"
+                                        class="text-lg md:text-[20px] text-left font-medium text-gray-600 px-5 py-4 md:px-[30px] md:py-[26px]">
+                                        Price
+                                    </th>
+                                    <th scope="col"
+                                        class="text-lg md:text-[20px] text-left font-medium text-gray-600 px-5 py-4 md:px-[30px] md:py-[26px]">
+                                        Quantity
+                                    </th>
+                                    <th scope="col"
+                                        class="text-lg md:text-[20px] text-left font-medium text-gray-600 px-5 py-4 md:px-[30px] md:py-[26px]">
+                                        Subtotal
+                                    </th>
+                                    <th scope="col"
+                                        class="text-lg md:text-[20px] text-left font-medium text-gray-600 px-5 py-4 md:px-[30px] md:py-[26px]">
+                                        Remove
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
+                                    <td class="text-sm font-medium text-gray-900 px-5 py-4 md:px-[30px] md:py-[26px]">
+                                        <div>
+                                            <div class="flex items-center gap-5">
+                                                <div>
+                                                    <div class="w-16 h-16 md:w-20 md:h-20 overflow-hidden">
+                                                        <img class="w-full h-full object-cover"
+                                                            src="assets/images/cart-img-1.png" alt="cart img">
+                                                    </div>
+                                                </div>
+                                                <a href="#"
+                                                    class="text-base md:text-lg text-gray-600 font-normal leading-7 inline-block max-w-[235px] line-clamp-2">Short
+                                                    Sleeve Low Back Stretch Lace Wedding
+                                                    Dress</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td
+                                        class="text-base md:text-lg font-medium text-gray-500 px-5 py-4 md:px-[30px] md:py-[26px]">
+                                        $249
+                                    </td>
+                                    <td class="text-sm text-gray-900 font-light px-5 py-4 md:px-[30px] md:py-[26px]">
+                                        <div class="quantity-container">
+                                            <div
+                                                class="flex justify-between items-center w-[90px] h-10 border border-gray-300">
+                                                <button class="quantity-decrement h-full px-[14px] text-gray-500">
+                                                    <i class="fas fa-minus"></i>
+                                                </button>
+                                                <div class="quantity text-base md:text-lg font-medium text-gray-500">1
+                                                </div>
+                                                <button class="quantity-increment h-full px-[14px] text-gray-500">
+                                                    <i class="fas fa-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td
+                                        class="text-base md:text-lg font-medium text-gray-500 px-5 py-4 md:px-[30px] md:py-[26px]">
+                                        $199
+                                    </td>
+                                    <td
+                                        class="text-base md:text-lg font-medium text-gray-500 px-5 py-4 md:px-[30px] md:py-[26px]">
+                                        <button
+                                            class="text-base md:text-lg font-medium text-gray-500 px-5 py-4 md:px-[30px] md:py-[26px]"><i
+                                                class="fa-solid fa-xmark"></i></button>
+                                    </td>
+                                </tr>
+                                <tr class="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
+                                    <td class="text-sm font-medium text-gray-900 px-5 py-4 md:px-[30px] md:py-[26px]">
+                                        <div>
+                                            <div class="flex items-center gap-5">
+                                                <div>
+                                                    <div class="w-16 h-16 md:w-20 md:h-20 overflow-hidden">
+                                                        <img class="w-full h-full object-cover"
+                                                            src="assets/images/cart-img-2.png" alt="cart img">
+                                                    </div>
+                                                </div>
+                                                <a href="#"
+                                                    class="text-base md:text-lg text-gray-600 font-normal leading-7 inline-block max-w-[235px]">Short
+                                                    Sleeve Low Back Stretch Lace Wedding
+                                                    Dress</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td
+                                        class="text-base md:text-lg font-medium text-gray-500 px-5 py-4 md:px-[30px] md:py-[26px]">
+                                        $345
+                                    </td>
+                                    <td class="text-sm text-gray-900 font-light px-5 py-4 md:px-[30px] md:py-[26px]">
+                                        <div class="quantity-container">
+                                            <div
+                                                class="flex justify-between items-center w-[90px] h-10 border border-gray-300">
+                                                <button class="quantity-decrement h-full px-[14px] text-gray-500">
+                                                    <i class="fas fa-minus"></i>
+                                                </button>
+                                                <div class="quantity text-base md:text-lg font-medium text-gray-500">1
+                                                </div>
+                                                <button class="quantity-increment h-full px-[14px] text-gray-500">
+                                                    <i class="fas fa-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td
+                                        class="text-base md:text-lg font-medium text-gray-500 px-5 py-4 md:px-[30px] md:py-[26px]">
+                                        $400
+                                    </td>
+                                    <td
+                                        class="text-base md:text-lg font-medium text-gray-500 px-5 py-4 md:px-[30px] md:py-[26px]">
+                                        <button
+                                            class="text-base md:text-lg font-medium text-gray-500 px-5 py-4 md:px-[30px] md:py-[26px]"><i
+                                                class="fa-solid fa-xmark"></i></button>
+                                    </td>
+                                </tr>
+                                <tr class="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
+                                    <td class="text-sm font-medium text-gray-900 px-5 py-4 md:px-[30px] md:py-[26px]">
+                                        <div>
+                                            <div class="flex items-center gap-5">
+                                                <div>
+                                                    <div class="w-16 h-16 md:w-20 md:h-20 overflow-hidden">
+                                                        <img class="w-full h-full object-cover"
+                                                            src="assets/images/cart-img-1.png" alt="cart img">
+                                                    </div>
+                                                </div>
+                                                <a href="#"
+                                                    class="text-base md:text-lg text-gray-600 font-normal leading-7 inline-block max-w-[235px]">Short
+                                                    Sleeve Low Back Stretch Lace Wedding
+                                                    Dress</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td
+                                        class="text-base md:text-lg font-medium text-gray-500 px-5 py-4 md:px-[30px] md:py-[26px]">
+                                        $275
+                                    </td>
+                                    <td class="text-sm text-gray-900 font-light px-5 py-4 md:px-[30px] md:py-[26px]">
+                                        <div class="quantity-container">
+                                            <div
+                                                class="flex justify-between items-center w-[90px] h-10 border border-gray-300">
+                                                <button class="quantity-decrement h-full px-[14px] text-gray-500">
+                                                    <i class="fas fa-minus"></i>
+                                                </button>
+                                                <div class="quantity text-base md:text-lg font-medium text-gray-500">1
+                                                </div>
+                                                <button class="quantity-increment h-full px-[14px] text-gray-500">
+                                                    <i class="fas fa-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td
+                                        class="text-base md:text-lg font-medium text-gray-500 px-5 py-4 md:px-[30px] md:py-[26px]">
+                                        $147
+                                    </td>
+                                    <td
+                                        class="text-base md:text-lg font-medium text-gray-500 px-5 py-4 md:px-[30px] md:py-[26px]">
+                                        <button
+                                            class="text-base md:text-lg font-medium text-gray-500 px-5 py-4 md:px-[30px] md:py-[26px]"><i
+                                                class="fa-solid fa-xmark"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Table End -->
+
+
+
+
+
+                <!-- Cart Total Start -->
+                <div class="flex flex-col lg:flex-row justify-between gap-[30px]">
+                    <div>
+                        <div class="coupon-box sm:w-[400px] relative">
+                            <input type="text" placeholder="Coupon Code"
+                                class="block w-full px-6 py-[18px] border-1 border-[rgba(18, 20, 29, 0.10)] text-gray-600 bg-white ring-1 ring-inset ring-[rgba(18, 20, 29, 0.10)] focus:ring-1 focus:ring-main-900 placeholder:text-gray-600 placeholder:text-base outline-none">
+                            <button
+                                class="absolute text-base top-1/2 -translate-y-1/2 right-[6px] px-6 py-[12px] bg-main-900 text-white">Apply</button>
+                        </div>
+                    </div>
+                    <div class="sm:w-[370px] bg-gray-100">
+                        <div class="p-[30px]">
+                            <p class="text-2xl text-[#0A033C] font-medium mb-10">Order Summary</p>
+                            <div class="flex justify-between items-center mb-[18px]">
+                                <p class="text-lg text-[#4B4457] font-normal">Subtotal</p>
+                                <p class="text-lg text-gray-600 font-medium">$647.00</p>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <p class="text-lg text-[#4B4457] font-normal">Shiping</p>
+                                <p class="text-lg text-gray-600 font-medium">$5.00</p>
+                            </div>
+                        </div>
+                        <div class="w-full h-[1px] bg-[#ddd]"></div>
+                        <div class="p-[30px]">
+                            <div class="flex justify-between items-center mb-[30px]">
+                                <p class="text-2xl text-gray-600 font-medium">Total</p>
+                                <p class="text-2xl text-gray-600 font-medium">$652.00</p>
+                            </div>
+                            <button
+                                class="w-full text-lg text-white font-medium bg-main-900 px-[30px] py-[14px]">Proceed
+                                To Checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cart Total End -->
+        </div>
+    </div>
+    <!-- Cart Section End -->
+
+
+
+
+
+
+    <!-- Footer Section Start -->
+    <footer id="footer-section" class="footer-section">
+        <div class="footer-section-area bg-[#181A29] relative overflow-hidden">
+            <img src="assets/icons/footer-left.svg" alt="footer left" class="absolute left-0 z-10 bottom-20">
+            <img src="assets/icons/footer-right.svg" alt="footer left" class="absolute top-0 right-0 z-10">
+            <div class="container">
+                <div class="flex flex-col justify-center items-center gap-[30px] w-full mx-auto py-20 relative z-30">
+                    <a href="index.html" class="footer-logo">
+                        <img src="assets/icons/logo-white.svg" alt="logo">
+                    </a>
+                    <ul class="flex justify-center items-center gap-[18px] flex-wrap">
+                        <li>
+                            <a href="index.html" class="text-base font-normal text-gray-200">Home</a>
+                        </li>
+                        <li>
+                            <a href="services.html" class="text-base font-normal text-gray-200">Our Services</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html" class="text-base font-normal text-gray-200">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="product.html " class="text-base font-normal text-gray-200">Accessories</a>
+                        </li>
+                        <li>
+                            <a href="book-appoinment.html" class="text-base font-normal text-gray-200">Book
+                                Appoinmnet</a>
+                        </li>
+                    </ul>
+                    <ul class="flex gap-6 justifiy-center-items-center">
+                        <li>
+                            <a href="" target="_blank" class="text-xl text-gray-200"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="text-xl text-gray-200"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="text-xl text-gray-200"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="text-xl text-gray-200"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full h-[1px] bg-[#4d4d4f]"></div>
+            <div class="flex justify-center py-6">
+                <p class="text-base font-normal text-white">© All rights reserved Copyrights 2024</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!-- Slick Slider -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
